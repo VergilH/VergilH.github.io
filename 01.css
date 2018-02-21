@@ -1,0 +1,17 @@
+.xbox{
+    width: 30%;
+	padding-bottom: 30%;
+    margin: 1%;
+    border-radius: 9%;
+    background-color: #FF9900;
+    float: left;
+    clear: left;
+	}
+	.box {
+		width: 30%;
+	    padding-bottom: 30%;
+	    margin: 1%;
+	    border-radius: 9%;
+	    background-color: #FF9900;
+	    float: left;
+	}
