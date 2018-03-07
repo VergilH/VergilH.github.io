@@ -29,6 +29,7 @@ html{
 			margin: 1.2rem 1rem 0rem 0rem;
 		}
 		.tel{
+			display: flex;
 			width: 100%;
 			height: 5rem;
 			position: absolute;top:6rem; left: 0rem; right: 0rem;
@@ -36,12 +37,15 @@ html{
 			font-size: 2rem;
 		}
 		.password{
+			display: flex;
 			width: 100%;
 			height: 5rem;
 			position: absolute;top:12rem; left: 0rem; right: 0rem;
 			background-color: rgb(255,255,255);
 		}
 		input{
+			margin: 0rem 0rem 0rem 7.5rem;
+			width: 100%;
 			border: none;
 			outline: medium;
 			vertical-align: middle;
@@ -77,8 +81,20 @@ html{
 			text-decoration: none;
 			color: inherit;
 		}
-		img{
+		{
 			width: 4rem;
 			margin: 1rem 1rem 1rem 2rem;
 			vertical-align: middle;
+		}
+		.img1{
+			width: 4rem;
+			position: absolute;
+			top: 1rem;
+			left: 2rem;
+		}
+		.img2{
+			width: 4rem;
+			position: absolute;
+			top: 1rem;
+			left: 2rem;
 		}
