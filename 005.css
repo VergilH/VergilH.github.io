@@ -28,6 +28,31 @@ html {
 			background-image: url(background.png);
 			background-size: cover;
 		}
+		.head {
+			position: relative;
+      		top: 50%;
+      		left: 2rem;
+      		transform: translateY(-50%);
+      		width: 10rem;
+		}
+		.outline-text {
+			position: absolute;
+			top: 6rem;
+			left: 15rem;
+			font-size: 2rem;
+		}
+		.outline-img {
+			position: relative;
+			top: .5rem;
+			width: 1.2rem;
+			font-size: 1.2rem;
+		}
+		.outline-position {
+			position: absolute;
+			top: 8.5rem;
+			left: 15rem;
+			font-size: 1.4rem;
+		}
 		.main {
 			position: absolute; top: 20rem; left: 0rem; right: 0rem;
 			margin: 0rem 0rem;
