@@ -51,7 +51,7 @@ body {
 			background: url(sprite.png);
 		}
 		.icon1 {
-			background-position: 5px -54px;
+			background-position: 5px -50px;
     		background-size: 220%;
 		}
 		.icon2 {
@@ -91,8 +91,8 @@ body {
 			position: absolute;
 			top: .8rem;
 			right: .5rem;
-			width: 2.75rem;
-			height: 2.75rem;
+			width: 30px;
+			height: 30px;
 			border: none;
 		}
 		.header-button {
