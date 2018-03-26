@@ -89,11 +89,12 @@ body {
 		}
 		.map {
 			position: absolute;
-			top: .8rem;
+			top: .9rem;
 			right: .5rem;
 			width: 30px;
 			height: 30px;
 			border: none;
+			padding: 0 0;
 		}
 		.header-button {
 			display: inline-block;
@@ -199,9 +200,10 @@ body {
 			background-size: 100%;
 		}
 		.footer-button {
-			width: 4.2rem;
-			height: 3.5rem;
+			width: 50px;
+			height: 42px;
 			border: none;
+			padding: 0 0;
 		}
 		.footer-small {
 			padding: .8rem 0 0;
