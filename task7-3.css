@@ -1,0 +1,119 @@
+body {
+	margin: 0;
+	background-color: #f0f0f0;
+}
+.sprite {
+	background-image: url(task7-sprite.png);
+}
+.home {    
+	background-position: -6px -170px;
+    background-color: #29BDE0;
+    background-size: 310%;
+}
+.info {
+	background-position: -2px -282px;
+    background-color: #29BDE0;
+    background-size: 300%;
+}
+header {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	width: 100vw;
+	height: 4rem;
+	color: #FFF;
+	font-size: 2.5rem;
+	text-align: center;
+	line-height: 4rem;
+	background-color: #29BDE0;
+}
+.header-home {
+	float: left;
+    width: 36px;
+    height: 36px;
+    margin: .5rem 0 0 .5rem;
+    padding: 0 0;
+    border: none;
+}
+.header-info {
+	float: right;
+	width: 36px;
+    height: 36px;
+    margin: .5rem .5rem 0 0;
+    padding: 0 0;
+    border: none;
+}
+.main {
+	width: 100vw;
+    height: 40rem;
+    padding: 6rem 6vw 0;
+    color: #FFF;
+    font: 1rem 黑体;
+    text-align: center;
+    background-color: #29BDE0;
+}
+.center-img {
+	max-width: 20rem;
+	padding-bottom: 2rem;
+}
+.center-text {
+	text-align: left;
+	font-size: 1.5rem;
+	font-family: 宋体;
+	letter-spacing: .1rem;
+}
+.yellow-text {
+	font-size: 2rem;
+	color: #FFC865;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	height: 8rem;
+	padding: 1.5rem 5vw;
+	font-family: 黑体;
+	font-size: 2rem;
+	color: #FFF;
+	background-color: rgb(41,189,224,0.5);
+}
+.footer-left {
+	float: left;
+	width: 40vw;
+	height: 5rem;
+	border-radius: .6rem;
+	font-size: 2rem;
+	color: #FFF;
+	background: #F66F6F;
+}
+.footer-right {
+	float: right;
+	width: 40vw;
+	height: 5rem;
+	border-radius: .6rem;
+	font-size: 2rem;
+	background: #FBB435;
+}
+.contact {
+	position: relative;
+	width: 100vw;
+	height: 10rem;
+	padding: 1rem 2rem;
+	border: solid #DDD;
+	border-width: 0 0 0.1rem 0;
+	font-family: 黑体;
+	font-size: 2rem;
+	box-sizing: border-box;
+	background-color: #FFF;
+}
+.contact-time {
+	position: absolute;
+	right: 0;
+	top: 1rem;
+	font-size: 1.4rem;
+	color: #D6D6D6;
+}
+.contact-day {
+	font-size: 1.6rem;
+	color: #A6A6A6;
+}
