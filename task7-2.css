@@ -35,23 +35,17 @@ body {
 }
 .icon4 {
     background-color: #FFF;
-    background-position: -27px -2px;
+    background-position: -30px -2px;
     background-size: 500%;
 }
 .icon5 {
     background-color: #FFF;
-    background-position: -49px -2px;
+    background-position: -54px -2px;
     background-size: 500%;
 }
 .icon6 {
-	border: none;
-    padding: 0 0;
-    margin: 1rem 0;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 0;
     background-color: #FFF;
-    background-position: -71px -2px;
+    background-position: -79px -2px;
     background-size: 500%;
 }
 .btn-hide {
@@ -59,8 +53,8 @@ body {
 	border: none;
     padding: 0 0;
     margin: 1rem 0;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 20px;
+    height: 20px;
     border-radius: 0;
 }
 .content:hover .btn-hide {

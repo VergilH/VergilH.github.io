@@ -46,7 +46,7 @@ header {
 .main {
 	width: 100vw;
     height: 40rem;
-    padding: 6rem 6vw 0;
+    padding: 6rem 6vw;
     color: #FFF;
     font: 1rem 黑体;
     text-align: center;
@@ -69,6 +69,7 @@ header {
 footer {
 	position: fixed;
 	bottom: 0;
+	z-index: 10;
 	width: 100vw;
 	height: 8rem;
 	padding: 1.5rem 5vw;
@@ -94,7 +95,7 @@ footer {
 	font-size: 2rem;
 	background: #FBB435;
 }
-.contact {
+.content {
 	position: relative;
 	width: 100vw;
 	height: 10rem;
@@ -106,14 +107,14 @@ footer {
 	box-sizing: border-box;
 	background-color: #FFF;
 }
-.contact-time {
+.content-time {
 	position: absolute;
 	right: 0;
 	top: 1rem;
 	font-size: 1.4rem;
 	color: #D6D6D6;
 }
-.contact-day {
+.content-day {
 	font-size: 1.6rem;
 	color: #A6A6A6;
 }
