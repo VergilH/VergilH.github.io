@@ -75,7 +75,7 @@ footer {
 	font-family: 黑体;
 	font-size: 2rem;
 	color: #FFF;
-	background-color: rgb(41,189,224,0.5);
+	background: rgb(41,189,224,0.5);
 }
 .footer-left {
 	float: left;
