@@ -45,7 +45,7 @@ header {
 }
 .main {
 	width: 100vw;
-    height: 40rem;
+    height: 45rem;
     padding: 6rem 6vw;
     color: #FFF;
     font: 1rem 黑体;
@@ -69,14 +69,24 @@ header {
 footer {
 	position: fixed;
 	bottom: 0;
-	z-index: 10;
+	z-index: 1000;
 	width: 100vw;
 	height: 8rem;
 	padding: 1.5rem 5vw;
 	font-family: 黑体;
 	font-size: 2rem;
 	color: #FFF;
-	background: rgb(41,189,224,0.5);
+}
+.footer-bg {
+	z-index: -1000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 8rem;
+	background-color: #29BDE0;
+	filter:alpha(opacity:50); 
+	opacity:0.5;
 }
 .footer-left {
 	float: left;
@@ -118,3 +128,4 @@ footer {
 	font-size: 1.6rem;
 	color: #A6A6A6;
 }
+
