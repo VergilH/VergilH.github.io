@@ -45,7 +45,7 @@ header {
 }
 .main {
 	width: 100vw;
-    height: 45rem;
+    height: 42rem;
     padding: 6rem 6vw;
     color: #FFF;
     font: 1rem 黑体;
@@ -53,7 +53,7 @@ header {
     background-color: #29BDE0;
 }
 .center-img {
-	max-width: 20rem;
+	max-width: 15rem;
 	padding-bottom: 2rem;
 }
 .center-text {
