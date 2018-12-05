@@ -36,7 +36,6 @@ body {
 .header-bg {
 	position: relative;
 	width: 100vw;
-	min-width: 1200px;
 	height: 30px;
 	background-color: #FFF;
 	overflow-x: hidden;
@@ -51,8 +50,6 @@ body {
 	background-color: #FFF;
 	overflow-x: hidden;
 }
-
-
 
 .nav-background {
     z-index: -1;
@@ -77,7 +74,6 @@ header {
 	position: relative;
 	top: 0;
 	margin: 0 auto;
-	width: 1200px;
 	height: 30px;
 	color: #29B078;
 	background-color: #FFF;
@@ -110,18 +106,31 @@ header {
 .nav-bg {
 	position: relative;
 	width: 100vw;
-	min-width: 1200px;
 	height: 80px;
 	background-color: #29B078;
-	overflow-x: hidden;
 }
 
 nav {
 	position: relative;
 	margin: 0 auto;
-	width: 1200px;
 	height: 80px;
 	background-color: #29B078;
+}
+
+.dropbtn {
+	display: none;
+	float: right;
+	height: 80px;
+}
+
+.bg-green {
+	color: #FFF!important;
+	background-color: #29B078!important;
+}
+
+nav div ul li a {
+	color: #FFF!important;
+	background-color: #29B078!important;
 }
 
 .logo {
@@ -157,11 +166,9 @@ a:focus .nav-btn{
 	position: relative;
 	margin: 0 auto;
 	width: 100vw;
-	min-width: 1200px;
 }
 .img-loop {
 	width: 100vw;
-	min-width: 1200px;
 }
 
 div img {
@@ -172,7 +179,6 @@ div img {
 	position: relative;
 	margin: 100px auto;
 	padding: 10px 0;
-	width: 1200px;
 	height: 265px;
 }
 
@@ -205,7 +211,7 @@ div img {
     float: left;
 	margin: 0 40px;
   	width: 1px;
-    height: inherit;
+    height: 265px;
   	border-left: 1px dashed #DEDEDE;
 }
 
@@ -228,7 +234,6 @@ div img {
 	position: relative;
 	margin: 25px auto;
     padding-top: 15px;
-  	width: 1200px;
   	height: 30px;
   	text-align: center;
 }
@@ -236,7 +241,6 @@ div img {
 .main-content2 {
   	position: relative;
   	margin: 50px auto 90px;
-  	width: 1200px;
   	height: 72px;
 }
 
@@ -278,7 +282,7 @@ div img {
 .main-content3 {
 	position: relative;
 	margin: 72px auto;
-	width: 1200px;
+	
 	height: 370px;
 }
 
@@ -331,9 +335,25 @@ a:hover .main-content3-circle {
 .main-content4 {
 	position: relative;
 	margin: 66px auto 90px;
-	width: 1200px;
 	height: 177.7px;
 	border: 1px solid #EEEDED;
+	background-color: #FFF;
+}
+
+.main-content4-icon1 {
+	padding-right: 15%;
+}
+
+.main-content4-icon2 {
+	padding-right: 20%;
+}
+
+.main-content4-icon3 {
+	padding: 15% 5%;
+}
+
+.main-content4-icon4 {
+	padding: 15% 0 20% 5%;
 }
 
 .main-connector-bg {
@@ -346,7 +366,6 @@ a:hover .main-content3-circle {
 .main-connector {
 	position: relative;
 	margin: 0 auto;
-	width: 1200px;
 	height: 30px;
 }
 
@@ -362,7 +381,6 @@ footer {
 	position: relative;
 	margin: 0 auto;
 	padding-top: 20px;
-	width: 1200px;
 	height: 175px;
 	color: #FFF;
 	background-color: #29B078;
@@ -372,7 +390,6 @@ footer {
 	z-index: -1;
 	position: relative;
 	width: 100vw;
-	min-width: 1200px;
 	height: 185px;
 	background-color: #29B078;
 	overflow-x: hidden;
@@ -397,7 +414,7 @@ p {
 
 .footer-content {
 	float: left;
-	width: 250px;
+	width: 210px;
     height: 120px;
     line-height: 30px;
 }
@@ -422,7 +439,6 @@ p {
 	position: absolute;
 	bottom: 0;
 	width: 100vw;
-	min-width: 1200px;
 	height: 25px;
 	color: #FFF;
 	border-top: 1px solid #32C086;
@@ -446,7 +462,7 @@ p {
 }
 
 .footer-text {
-	margin-bottom: 7px;
+	margin-bottom: 54px;
 }
 
 div .item img {
@@ -464,4 +480,293 @@ div #carousel-example-generic {
 
 .text-left {
 	text-align: left;
+}
+
+
+@media screen and (min-width: 1200px) {
+	header {
+		width: 1200px;
+	}
+
+	nav {
+		width: 1200px;
+	}
+
+	footer {
+		width: 1200px;
+	}
+
+	.main-connector {
+    	width: 1200px;
+    }
+
+    .main-subnav {
+    	width: 1200px;
+    }
+
+    .main-content1 {
+    	width: 1200px;
+    }
+
+    .main-content2 {
+    	width: 1200px;
+    }
+
+    .main-content3 {
+    	width: 1200px;
+    }
+
+    .main-content4 {
+    	width: 1200px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+	header {
+		width: 100vw;
+		padding-left: 15px;
+	}
+
+	nav {
+		width: 100vw;
+		padding: 0 15px;
+	}
+
+	footer {
+		width: 100vw;
+		padding: 20px 15px 0;
+	}
+
+    .main-connector {
+    	width: 100vw;
+    }
+
+    .main-subnav {
+    	width: 100vw;
+    }
+
+    .main-content1 {
+    	width: 100vw;
+    }
+
+    .main-content2 {
+    	margin: 0;
+    	width: 100vw;
+    }
+
+    .main-content3 {
+    	width: 100vw;
+    }
+
+    .main-content4 {
+    	width: 90vw;
+    }
+
+	.blank {
+		display: none;
+	}
+
+	.main-content1 {
+		height: auto;
+		overflow: hidden;
+	}
+
+	.main-content2 {
+		height: auto;
+		overflow: hidden;
+	}
+
+	.main-content3 {
+		height: auto;
+		overflow: hidden;
+	}
+
+	.main-content4 {
+		height: auto;
+		overflow: hidden;
+	}
+
+	.main-subnav {
+		height: auto;
+		overflow: hidden;
+	}
+
+	.main-connector {
+		height: auto;
+		overflow: hidden;
+	}
+
+	.main-connector-bg {
+		height: auto;
+		overflow: hidden;
+	}
+}
+
+@media screen and (min-width: 624px) and (max-width:1200px) {
+
+	.main-content1 span {
+		width: 50vw;
+		padding: 0 12vw;
+	}
+
+	#grayline {
+		margin: 0 3vw 0 15vw;
+	}
+
+	.main-amount {
+		width: 25vw;
+	}
+
+	.main-content2-circle {
+		margin: 1vw 5vw;
+		width: 10vw;
+		height: 10vw;
+		line-height: 10vw;
+		border-radius: 5vw;
+	}
+
+	.main-content2-arrow {
+		display: none;
+	}
+
+	.main-content2-text {
+		display: flex;
+		margin: 1vw 0;
+		width: 27vw;
+		height: 10vw;
+    	justify-content: space-around;
+    	flex-direction: column;
+	}
+
+	.main-content2-text p {
+		margin: 0;
+	}
+
+	.main-content3 div {
+		margin: 5vw 6vw;
+		width: 37vw;
+	}
+
+	.clearfloat {
+		clear: both;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	footer {
+		height: auto;
+		margin-bottom: 45px;
+	}
+
+	.footer-bg {
+		height: auto;
+		padding: 2vw 0;
+	}
+
+	.footer-content {
+		float: none;
+		height: auto;
+	}
+
+	.footer-wx {
+		float: none;
+		text-align: left;
+	}
+
+	.footer-copyright {
+		height: auto;
+	}
+
+	.xx {
+		height: auto;
+	}
+
+	.footer-text {
+		margin-bottom: 20px;
+	}
+
+	.hidden-img1 {
+		display: none;
+	}
+
+	.hidden-img2 {
+		display: block;
+	}
+
+	.main-content4 {
+		width: 70vw;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.hidden-img2 {
+		display: none;
+	}
+
+	.hidden-img1 {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 624px) {
+	.main-content1 span {
+		width: 100vw;
+		padding: 0 12vw;
+	}
+
+	#grayline {
+		display: none;
+	}
+
+	.main-amount {
+		width: 100vw;
+    	text-align: center;
+    	margin: 0 auto;
+	}
+
+	.main-content2-circle {
+		margin: 2vw 10vw;
+    	width: 20vw;
+    	height: 20vw;
+    	line-height: 20vw;
+    	border-radius: 10vw;
+	}
+
+	.main-content2-arrow {
+		display: none;
+	}
+
+	.main-content2-text {
+		display: flex;
+    	margin: 2vw 0;
+    	width: 50%;
+    	height: 20vw;
+    	justify-content: space-around;
+    	flex-direction: column;
+	}
+
+	.main-content2-text p {
+		margin: 0;
+	}
+
+	.main-content3 div {
+		margin: 5vw 6vw;
+		width: 90vw;
+	}
+
+	.clearfloat {
+		clear: both;
+	}
+
+	.carousel-indicators {
+		bottom: -10px!important;
+	}
+
+	nav a div {
+		display: none;
+	}
+
+	.dropbtn {
+		display: inline-block;
+	}
 }

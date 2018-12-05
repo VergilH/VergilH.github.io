@@ -74,10 +74,29 @@ nav {
 	height: 80px;
 	background-color: #29B078;
 }
+
+.dropbtn {
+	display: none;
+	float: right;
+	height: 80px;
+	line-height: 80px;
+}
+
+.bg-green {
+	color: #FFF!important;
+	background-color: #29B078!important;
+}
+
+nav div ul li a {
+	color: #FFF!important;
+	background-color: #29B078!important;
+}
+
 .logo {
 	float: left;
 	padding: 16px 0;
 }
+
 .nav-btn {
 	float: right;
 	width: 80px;
@@ -137,7 +156,7 @@ content img {
 
 .introduce {
     float: right;
-    width: 560px;
+    width: 100%;
     line-height: 25px;
 }
 
@@ -230,15 +249,24 @@ footer {
 	position: relative;
 	margin: 0 auto;
 	padding-top: 20px;
-	width: 1200px;
 	height: 175px;
 	color: #FFF;
 	background-color: #29B078;
 }
 
+.footer-bg {
+	z-index: -1;
+	position: relative;
+	width: 100vw;
+	height: 185px;
+	background-color: #29B078;
+	overflow-x: hidden;
+}
+
 p {
 	display: inline-block;
 }
+
 .line {
 	height: 18px;
     line-height: 18px;
@@ -254,10 +282,11 @@ p {
 
 .footer-content {
 	float: left;
-	width: 250px;
+	width: 210px;
     height: 120px;
     line-height: 30px;
 }
+
 .xx {
 	float: left;
     padding-top: 5px;
@@ -273,24 +302,12 @@ p {
 	text-align: center;
 }
 
-.footer-background {
-	z-index: -1;
-	position: absolute;
-	top: 1505px;
-	width: 100vw;
-	min-width: 1200px;
-	height: 185px;
-	background-color: #29B078;
-	overflow-x: hidden;
-}
-
 .footer-copyright {
 	z-index: 1;
 	position: absolute;
-	top: 1665px;
+	bottom: 0;
 	width: 100vw;
-	min-width: 1200px;
-	height: 24px;
+	height: 25px;
 	color: #FFF;
 	border-top: 1px solid #32C086;
 	box-sizing: border-box;
@@ -298,16 +315,22 @@ p {
 	text-align: center;
 	overflow-x: hidden;
 }
+
+.footer-copyright p {
+	margin: 0;
+}
+
 .img-QR {
 	margin: 3px 1px 0 0;
 	width: 90px;
 }
+
 .p-footer {
 	font-size: 16px;
 }
 
 .footer-text {
-	margin-bottom: 7px;
+	margin-bottom: 54px;
 }
 
 div.item img{
@@ -316,4 +339,134 @@ div.item img{
 div #carousel-example-generic {
     width:100%;
     margin:0 auto;
+}
+
+@media screen and (max-width:1200px) {
+	header {
+		width: 100vw;
+		padding-left: 15px;
+	}
+
+	nav {
+		width: 100vw;
+		padding: 0 15px;
+	}
+
+	.banner {
+		width: 100vw;
+	}
+
+	footer {
+		width: 100vw;
+		padding: 20px 15px 0;
+	}
+
+	.header-background {
+		display: none;
+	}
+
+	.nav-background {
+		display: none;
+	}
+
+	.banner-background {
+		display: none;
+	}
+
+	content {
+		width: 100vw;
+		height: auto;
+		margin: 0 auto 50px;
+		padding: 0 15px;
+		overflow: auto;
+	}
+
+	content div {
+		width: 100vw;
+	}
+
+	.content-list {
+		width: 30%;
+	}
+
+	.content-list div {
+		width: 100%;
+	}
+
+	.content-main {
+		width: 68%;
+		height: auto;
+	}
+
+	.content-main-text {
+		width: 100%;
+		padding: 3% 8%;
+	}
+
+	.content-main div {
+		width: 100%;
+		height: auto;
+		padding: 3% 8%;
+		overflow: auto;
+	}
+
+	.introduce {
+		width: 100%;
+	}
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+	footer {
+		height: auto;
+		margin-bottom: 45px;
+	}
+
+	.footer-bg {
+		height: auto;
+		padding: 2vw 0;
+	}
+
+	.footer-content {
+		float: none;
+		height: auto;
+	}
+
+	.footer-wx {
+		float: none;
+		text-align: left;
+	}
+
+	.footer-copyright {
+		height: auto;
+	}
+
+	.xx {
+		height: auto;
+	}
+
+	.footer-text {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.content-list {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.content-main {
+		width: 100%;
+		height: auto;
+	}
+
+	nav a div {
+		display: none;
+	}
+
+	.dropbtn {
+		display: inline-block;
+	}
 }

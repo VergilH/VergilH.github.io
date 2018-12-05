@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>技能树首页</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="index.css">
   <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
   <script src="js/bootstrap.js"></script>
 </head>
 <body>
+
   <div class="header-bg">
     <header>
       <p class="header-text">客服热线：010-594-78634</p>
@@ -42,6 +43,29 @@
 	  <a href="task8-2.html">
 	    <div class="nav-btn">关于</div>
 	  </a>
+
+	  <div class="dropdown bg-green dropbtn pull-right">
+      <button type="button" class="btn dropdown-toggle bg-green dropbtn" id="dropdownMenu1" data-toggle="dropdown">
+      点击展开      
+      </button>
+  
+        <ul class="dropdown-menu bg-green" role="menu" aria-labelledby="dropdownMenu1">
+          <li>
+            <a href="task8-2.html">关于</a>       
+          </li>
+          <li role="presentation">
+            <a href="#">推荐</a>        
+          </li>
+
+          <li role="presentation">
+            <a href="task8-3.html">职业</a>       
+          </li>
+          <li role="presentation">
+            <a href="index.html">首页</a>       
+          </li>
+        </ul>
+      </div>  
+
     </nav>
   </div>
 
@@ -83,25 +107,27 @@
         <div class="main-icon1">
           <img src="images/rocket.png">
         </div>
-  		  <p id="strong-text">高效</p>
-  		  <p class="normal-text">将五到七年的成长时间，缩短到一年到三年</p>
+  		<p id="strong-text">高效</p>
+  	    <br>
+  		<p class="normal-text">将五到七年的成长时间，缩短到一年到三年</p>
   	  </span>
 	  <div class="blank"></div>
 	  <span>
         <div class="main-icon2">
           <img src="images/book.png">
         </div>
-  		  <p id="strong-text">规范</p>
-		  <br>
-  		  <p class="normal-text">标准的实战教程，不会走弯路</p>
+  		<p id="strong-text">规范</p>
+		<br>
+  		<p class="normal-text">标准的实战教程，不会走弯路</p>
   	  </span>
 	  <div class="blank"></div>
 	  <span>
         <div class="main-icon3">
           <img src="images/halo.png">
         </div>
-  		  <p id="strong-text">人脉</p>
-  		  <p class="normal-text">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路</p>
+  		<p id="strong-text">人脉</p>
+  		<br>
+  		<p class="normal-text">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路</p>
   	  </span>
 	  <div id="grayline"></div>
 	  <div class="main-amount">
@@ -214,7 +240,7 @@
   		<p class="normal-text">百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
   	  </div>
   	  <span></span>
-  	  <div>
+  	  <div class="clearfloat">
   		<img src="images/photo3.png">
   		<br>
   		<p id="strong-text">技术顾问：罗大佑</p>
@@ -229,9 +255,6 @@
   		<br>
   		<p class="normal-text">百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
   	  </div>
-  	  <button name="#" class="main-content3-circle">
-  	  	<span class="main-content3-circle"></span>
-  	  </button>
   	</div>
 
   	<div class="main-subnav">
@@ -239,7 +262,12 @@
 	</div>
 
   	<div class="main-content4">
-  	  <img src="images/cooperate.png">
+  	  <img class="hidden-img1" src="images/cooperate.png">
+  	  <img class="hidden-img2 main-content4-icon1" src="images/ali.png">
+  	  <img class="hidden-img2 main-content4-icon2" src="images/jinshan.png">
+  	  <img class="hidden-img2" src="images/huanxin.png">
+  	  <img class="hidden-img2 main-content4-icon3" src="images/ronglian.png">
+  	  <img class="hidden-img2 main-content4-icon4" src="images/qiniu.png">
   	</div>
 
     <div class="main-connector-bg">
@@ -247,6 +275,7 @@
 	  <p id="strong-text">友情链接</p>
 	</div>
 	<div class="main-connector">
+	  <ul>
 	  <li>
 	  	<a href="#">
 	  	  <p class="normal-text">手机软件</p>
@@ -297,8 +326,10 @@
 	  	  <p class="normal-text">找工作</p>
 	  	</a>
 	  </li>
+	</ul>
 	</div>
 	<div class="main-connector">
+	  <ul>
 	  <li>
 	  	<a href="#">
 	  	  <p class="normal-text">手机软件</p>
@@ -349,6 +380,7 @@
 	  	  <p class="normal-text">找工作</p>
 	  	</a>
 	  </li>
+	</ul>
 	</div>
   </div>
   </main>
@@ -357,8 +389,6 @@
     <footer>
 	  <div class="xx">
 	    <P class="footer-text p-footer">技能树——改变你我</P>
-	    <br>
-	    <br>
 	    <br>
 	    <p class="footer-blank">关于我们</p>
 	    <p class="line">关于我们</p>
