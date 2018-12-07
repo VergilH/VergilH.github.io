@@ -341,6 +341,20 @@ div #carousel-example-generic {
     margin:0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+	header {
+		width: 1200px;
+	}
+
+	nav {
+		width: 1200px;
+	}
+
+	footer {
+		width: 1200px;
+	}
+}
+
 @media screen and (max-width:1200px) {
 	header {
 		width: 100vw;
