@@ -7,7 +7,7 @@ body {
 	padding: 0;
 	box-sizing:border-box;
 	width: 100vw;
-	background-color: #FAFAFA;
+	background-color: #FAFAFA!important;
 	overflow-x: hidden;
 }
 
@@ -15,26 +15,39 @@ body {
 	background-image: url(images/sprite.png);
 }
 
+.header-bg {
+	position: relative;
+	width: 100vw;
+	height: 30px;
+	background-color: #FFF;
+	overflow-x: hidden;
+}
+
 .header-background {
+    z-index: -1;
 	position: absolute;
 	top: 0;
 	width: 100vw;
-	min-width: 1200px;
 	height: 30px;
 	background-color: #FFF;
-    z-index: -1;
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 .nav-background {
+    z-index: -1;
 	position: absolute;
 	top: 30px;
 	width: 100vw;
-	min-width: 1200px;
 	height: 80px;
 	background-color: #29B078;
-    z-index: -1;
-    overflow-x: hidden;
+	overflow-x: hidden;
+}
+
+.nav-bg {
+	position: relative;
+	width: 100vw;
+	height: auto;
+	background-color: #29B078;
 }
 
 header {
@@ -72,6 +85,101 @@ nav {
 	width: 1200px;
 	height: 80px;
 	background-color: #29B078;
+}
+
+.nav-dropdown-btn {
+	float: right;
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #66CD99;
+}
+
+.nav-dropdown {
+	display: none;
+	position: relative;
+	width: 100vw;
+	height: 160px;
+	background-color: #29B078;
+	color: #FFF;
+	text-align: center;
+}
+
+.nav-dropdown:hover {
+	display: block;
+}
+
+.nav-dropdown:focus {
+	display: block;
+}
+
+.nav-dropdown-menu {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: #29B078;
+	color: #FFF;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.nav-dropdown a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.nav-bg button {
+	display: none;
+	position: absolute;
+	right: 15px;
+	top: 20px;
+	float: right;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+    border: none;
+    border-radius: 5px;
+	background-color: #222;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover .nav-dropdown-btn {
+	display: block;
+	background-color: #2E8B57;
+}
+
+button:focus .nav-dropdown-btn {
+	display: block;
+	background-color: #2E8B57;
+	outline: none;
+}
+
+button:focus + .nav-dropdown {
+	display: block;
+	background-color: #555;
+}
+
+a:hover .nav-dropdown-menu {
+	background-color: #66CD99;
+	text-decoration: none;
+}
+
+a:focus .nav-dropdown-menu {
+	background-color: #66CD99;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none!important;
+}
+
+a:focus {
+	text-decoration: none!important;
 }
 
 .dropbtn {
@@ -558,7 +666,7 @@ p {
 		display: none;
 	}
 
-	.dropbtn {
+	.nav-bg button {
 		display: inline-block;
 	}
 }
