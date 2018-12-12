@@ -12,7 +12,7 @@ body {
 
 .normal-text {
 	font-size: 14px;
-	color: #999;
+	color: #999!important;
 	text-align: left;
 }
 
@@ -20,6 +20,7 @@ body {
 	font-size: 18px;
 	font-weight: bold;
     text-align: center;
+    color: #000!important;
 }
 
 #green-text {
@@ -388,12 +389,23 @@ div img {
 	float: left;
 	padding: 20px 32px;
 	width: 272px;
-	height: inherit;
+	height: 370px;
   	border: 1px solid #EEEDED;
   	border-radius: 5px;
+  	box-sizing: border-box;
   	line-height: 24px;
 	text-align: center;
 	background-color: #FFF;
+}
+
+.main-content3 a:hover div{
+	box-shadow: 0px 0px 8px 0px #999!important;
+	color: inherit!important;
+}
+
+.main-content3 a:focus div{
+	box-shadow: 0px 0px 8px 0px #999!important;
+	color: inherit!important;
 }
 
 .main-content3 span {
