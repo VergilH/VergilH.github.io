@@ -45,6 +45,15 @@ body {
 	background-color: #29B078;
 }
 
+.nav-bg div a p {
+	width: 65px;
+    height: 40px;
+	margin: 0;
+    padding-top: 3px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #FFF;
+}
+
 .banner-background {
 	position: absolute;
 	top: 110px;

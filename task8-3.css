@@ -87,6 +87,15 @@ nav {
 	background-color: #29B078;
 }
 
+.nav-bg div a p {
+	width: 65px;
+    height: 40px;
+	margin: 0;
+    padding-top: 3px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #FFF;
+}
+
 .nav-dropdown-btn {
 	float: right;
     width: 40px;

@@ -135,6 +135,15 @@ nav div ul li a {
 	background-color: #29B078!important;
 }
 
+.nav-bg div a p {
+	width: 65px;
+    height: 40px;
+	margin: 0;
+    padding-top: 3px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #FFF;
+}
+
 .logo {
 	float: left;
 	width: 107px;
