@@ -51,6 +51,14 @@ body {
 	margin: 0;
     padding-top: 3px;
     box-sizing: border-box;
+}
+a:hover .nav-dropdown-menu > p {
+    border-bottom: 3px solid #FFF;
+}
+a:focus .nav-dropdown-menu > p {
+    border-bottom: 3px solid #FFF;
+}
+#nav-default {
     border-bottom: 3px solid #FFF;
 }
 
