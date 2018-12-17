@@ -1,3 +1,4 @@
+
 body {
 	margin: 0;
 	padding: 0;
@@ -390,7 +391,6 @@ footer {
 }
 
 .footer-bg {
-	z-index: -1;
 	position: relative;
 	width: 100vw;
 	height: 185px;
@@ -400,6 +400,10 @@ footer {
 
 p {
 	display: inline-block;
+}
+
+footer a:hover p {
+	text-decoration: underline!important;
 }
 
 .line {
