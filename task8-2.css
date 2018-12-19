@@ -401,8 +401,20 @@ footer {
 p {
 	display: inline-block;
 }
+footer p {
+	display: inline-block;
+	color: #FFF!important;
+}
+
+footer a:link p {
+	color: #FFF!important;
+}
+footer a:visited p {
+	color: #FFF!important;
+}
 
 footer a:hover p {
+	color: #FFF!important;
 	text-decoration: underline!important;
 }
 
@@ -565,6 +577,9 @@ div #carousel-example-generic {
 
 	.introduce {
 		width: 100%;
+	}
+    .little-blank {
+		margin-left: 15px;
 	}
 }
 

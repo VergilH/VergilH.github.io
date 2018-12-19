@@ -526,9 +526,17 @@ a:hover .main-content3-circle {
 	height: 30px;
 }
 
+.main-connector ul {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
 .main-connector li {
 	float: left;
-	margin: 0 45px 0 1px;
+	width: 56px;
+	margin: 0 38px 0 22px;
 	font-size: 14px;
 	color: #999;
 	text-align: left;
@@ -552,6 +560,10 @@ footer {
 }
 
 p {
+	display: inline-block;
+}
+
+footer p {
 	display: inline-block;
 	color: #FFF!important;
 }
@@ -819,7 +831,7 @@ div #carousel-example-generic {
 
 	.main-content3 div {
 		margin: 5vw 6vw;
-		width: 37vw;
+		width: 38vw;
 	}
 
 	.clearfloat {
@@ -925,7 +937,7 @@ div #carousel-example-generic {
 	}
 
 	.main-content3 div {
-		margin: 5vw 6vw;
+		margin: 5vw 5vw;
 		width: 90vw;
 	}
 

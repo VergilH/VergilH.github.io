@@ -272,7 +272,7 @@ menu span {
 }
 
 menu button {
-	margin: 0 12px;
+	margin: 0 10px;
 	padding: 3px;
     border: none;
     background-color: #FAFAFA;
@@ -297,9 +297,9 @@ a:visited {
 
 main {
 	position: relative;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	width: 1200px;
-	height: 2500px;
+	height: auto;
 }
 
 #submenu {
@@ -315,6 +315,7 @@ main span {
 	margin: 45px 0 0 0;
 	width: 384px;
 	height: 445px;
+	background-color: #FFF;
 	font-size: 12px;
 	box-sizing: border-box;
 	border-radius: 6px;
@@ -449,6 +450,10 @@ footer {
 
 p {
 	display: inline-block;
+}
+footer p {
+	display: inline-block;
+	color: #FFF!important;
 }
 
 footer a:hover p {
@@ -608,6 +613,10 @@ footer a:hover p {
 
 	#submenu b {
 		padding-left: 15px;
+	}
+
+    .little-blank {
+		margin-left: 15px;
 	}
 }
 
