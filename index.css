@@ -531,16 +531,33 @@ a:hover .main-content3-circle {
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
+	padding: 0;
 }
 
 .main-connector li {
 	float: left;
-	width: 56px;
-	margin: 0 38px 0 22px;
-	font-size: 14px;
-	color: #999;
-	text-align: left;
+    width: 10%;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    list-style: none;
 }
+
+
+.main-connector li p::before {
+    content: "\a0";
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 4px;
+    height: 4px;
+    margin-right: 8px;
+    border-radius: 50%;
+    text-indent: 1.5px;
+    line-height: 1;
+    background-color: #999;
+}
+
 
 footer {
 	position: relative;
@@ -964,5 +981,21 @@ div #carousel-example-generic {
 	.main-content4 button {
 		width: 49.1%;
 		height: auto;
+	}
+}
+
+@media screen and (max-width:1024px) and (min-width: 425px) {
+	.main-connector li {
+		width: 20%;
+	}
+
+}
+
+@media screen and (max-width: 425px) {
+	.main-connector li {
+		width: 50%;
+	}
+	.main-connector li p {
+		width: 68px;
 	}
 }

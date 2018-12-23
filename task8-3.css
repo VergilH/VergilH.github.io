@@ -550,6 +550,11 @@ footer a:hover p {
 		width: 100vw;
 		padding: 0 15px;
 	}
+	
+	footer {
+		width: 100vw;
+		padding: 20px 15px 0;
+	}
 
 	.header-background {
 		display: none;
