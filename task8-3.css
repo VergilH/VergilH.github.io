@@ -595,13 +595,20 @@ footer a:hover p {
 	}
 
 	main span {
-		margin-left: 15px;
+		margin-left: 2%;
+    	width: 47%;
+    	height: auto;
 	}
 
 	.main-span-right {
-		margin: 45px 0 0 15px;
+		margin: 45px 0 0 2%;
 	}
 
+	.main-top {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
 	.main-summary {
 		width: 50%;
 	}
@@ -615,6 +622,14 @@ footer a:hover p {
 		width: 100%;
 		height: auto;
 	}
+	.main-footer p {
+		display: table-cell;
+	}
+
+	.introduce {
+    	min-width: 140px;
+   		width: 52%;
+	}
 
 	#submenu b {
 		padding-left: 15px;
@@ -622,6 +637,43 @@ footer a:hover p {
 
     .little-blank {
 		margin-left: 15px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	main {
+		width: 100vw;
+	}
+	main span {
+		margin: 45px 2% 0;
+		width: 96%;
+		height: auto;
+	}
+	.main-span-right {
+		margin: 45px 2% 0;
+	}
+	.main-hidden {
+		width: 100%;
+	}
+	.main-summary {
+		width: 100%;
+	}
+	.main-top {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	.main-top img {
+		width: 100px;
+		height: 100px;
+	}
+	.main-footer p {
+		display: table-cell;
+	}
+
+	.introduce {
+		min-width: 185px;
+		width: 70%;
 	}
 }
 
@@ -639,7 +691,16 @@ footer a:hover p {
 
 	.footer-content {
 		float: none;
+    	margin-bottom: 15px;
 		height: auto;
+	}
+
+	.footer-content a {
+		display: block;
+	}
+
+	.footer-content a p {
+		margin: 0;
 	}
 
 	.footer-wx {
@@ -649,6 +710,10 @@ footer a:hover p {
 
 	.footer-copyright {
 		height: auto;
+	}
+
+	.hidden-img1 {
+		display: none;
 	}
 
 	.xx {

@@ -599,7 +599,16 @@ div #carousel-example-generic {
 
 	.footer-content {
 		float: none;
+    	margin-bottom: 15px;
 		height: auto;
+	}
+
+	.footer-content a {
+		display: block;
+	}
+
+	.footer-content a p {
+		margin: 0;
 	}
 
 	.footer-wx {
@@ -609,6 +618,10 @@ div #carousel-example-generic {
 
 	.footer-copyright {
 		height: auto;
+	}
+	
+	.hidden-img1 {
+		display: none;
 	}
 
 	.xx {
