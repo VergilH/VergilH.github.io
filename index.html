@@ -5,10 +5,25 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>51包装</title>
-  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <script src="js/bootstrap.js"></script>
+  <script>
+    $(document).ready(function(){
+       $(".nav-bg nav div").hover(function(){
+            $(this).addClass("shadow");
+            $(this).siblings('div').removeClass("checked");
+       });
+   });
+
+    $(document).ready(function(){
+       $("#group .box").hover(function(){
+            $("span",this).addClass("nothing");
+            $("span",this).siblings("span").removeClass("group-default orange");
+       });
+   });
+  </script>
 </head>
 <body>
 
@@ -26,18 +41,10 @@
 
   <div class="nav-bg">
   	<nav>
-  		<a href="#">
-  			<div>品质保障</div>
-  		</a>
-  		<a href="#">
-  			<div>标准箱</div>
-  		</a>
-  		<a href="#">
-  			<div>在线定制</div>
-  		</a>
-  		<a href="#">
-  			<div class="checked">首页</div>
-  		</a>
+  		<div class="shadow"><a href="#">品质保障</a></div>
+  		<div class="shadow"><a href="#">标准箱</a></div>
+  		<div class="shadow"><a href="#">在线定制</a></div>
+  		<div class="checked"><a href="#">首页</a></div>
   	</nav>
   </div>
 
@@ -46,22 +53,22 @@
     <div class="group">
       <span class="group-number group-default">1</span>
       <span class="group-line group-default"></span>
-      <span>1.定制纸箱</span>
+      <span class="orange group-grey">1.定制纸箱</span>
     </div>
     <div class="group">
       <span class="group-number">2</span>
       <span class="group-line"></span>
-      <span class="text-grey">2.选择数量</span>
+      <span class="group-grey">2.选择数量</span>
     </div>
     <div class="group">
       <span class="group-number">3</span>
       <span class="group-line"></span>
-      <span class="text-grey">3.上传附件</span>
+      <span class="group-grey">3.上传附件</span>
     </div>
     <div class="group">
       <span class="group-number">4</span>
       <span class="group-line"></span>
-      <span class="text-grey">4.确认下单</span>
+      <span class="group-grey">4.确认下单</span>
     </div>
     </div>
   </group>
@@ -177,12 +184,10 @@
   			 <a href="#"><p class="regular-text">媒体介绍</p></a>
   		  </span>
       </div>
+      
+      <div class="footer-about">
 
-      <div class="pull-right footer-about">
-        <img src="images/QRcode.png">
-      </div>
-
-      <div class="pull-right footer-touch">
+      <div class="pull-left footer-touch">
         <span class="regular-text">
           <p class="regular-text">TEL:400-0000-000</p>
         </span>
@@ -192,6 +197,12 @@
         <span class="regular-text">
           <p class="regular-text">微信号:XXXXXXX</p>
         </span>
+      </div>  
+      <div class="pull-right QR-code">
+        <img src="images/QRcode.png">
+      </div>
+      <div class="clear"></div>
+
       </div>
   	</footer>
   </div>
