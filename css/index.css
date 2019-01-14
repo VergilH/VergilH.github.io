@@ -2,7 +2,6 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: microsoft YaHei!important;
-	background-color: #F9F9F9;
 }
 
 button {
@@ -159,6 +158,41 @@ nav a:hover {
 nav a:foucs {
 	color: #FFF;
 	background-color: #1D7AD9;
+}
+
+.dropdown {
+	display: none;
+	padding: 80px 0 0;
+	height: auto;
+}
+
+.nav-btn {
+	z-index: 10;
+	display: none;
+	position: absolute;
+    top: 20px;
+    right: 20px;
+	padding: 0 10px;
+	width: 42px;
+	height: 40px;
+}
+
+nav button:hover + .dropdown {
+	display: block!important;
+}
+
+nav button:foucs + .dropdown {
+	display: block!important;
+}
+
+.dropdown:hover {
+	display: block!important;
+    background-color: #f9f9f9;
+}
+
+.dropdown:foucs {
+	display: block!important;
+    background-color: #f9f9f9;
 }
 
 .checked {
@@ -455,6 +489,10 @@ footer {
 	height: auto;
 }
 
+.blank {
+	margin-right: 20px;
+}
+
 .footer-about {
 	float: right;
 	width: 230px;
@@ -573,13 +611,27 @@ footer span a:hover p {
     	line-height: 60px;
 	}
 
+	footer {
+		height: auto;
+	}
+
 	.footer-name {
 		float: none!important;
-		margin: 45px 0 0;
+    	margin: 0;
+    	width: 100%;
+	}
+
+	.footer-name span a p {
+		float: none!important;
+    	text-align: center;
 	}
 
 	.footer-about {
-		float: left;
+		width: 100%;
+	}
+
+	.blank {
+		margin-right: 0;
 	}
 
 	.clear {
@@ -599,6 +651,12 @@ footer span a:hover p {
 	footer span a p {
 		clear: both;
 	}
+
+	footer div {
+		float: none!important;
+		width: 100%;
+    	text-align: center;
+	}
 }
 
 @media screen and (max-width: 685px) {
@@ -610,27 +668,38 @@ footer span a:hover p {
 	.box {
 		float: none!important;
 		margin: 0 auto;
-		width: 70%;
+		width: 100%;
 	}
 
 	.group {
 		margin-bottom: 10px;
-		width: 100%;
+		width: 25%;
 	}
 
 	#group {
-		margin: 20px auto 30px;
+		margin: 40px auto 20px;
+	}
+
+	.group-line {
+		width: 100%;
+	}
+
+	.group-hidden {
+		display: none;
 	}
 }
 
 @media screen and (max-width: 460px) {
 	nav div {
-		width: 23%;
-		margin: 28px 1% 0;
+		display: none;
+		width: 100%;
+		margin: 0;
+		border: none;
 		text-align: center;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		overflow: hidden;
+		background-color: #f9f9f9;
 	}
 
 	nav a {
@@ -639,6 +708,14 @@ footer span a:hover p {
 		text-overflow: ellipsis;
     	white-space: nowrap;
     	overflow: hidden;
+	}
+
+	.nav-btn {
+		display: block;
+	}
+
+	.dropdown-btn {
+		display: block;
 	}
 }
 
