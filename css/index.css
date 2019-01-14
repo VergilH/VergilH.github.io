@@ -31,6 +31,10 @@ button {
 	font-weight: bold;
 }
 
+.orange {
+	color: #FF7F02!important;
+}
+
 .text-blue {
 	color: #1D7AD9!important;
 }
@@ -83,7 +87,7 @@ header {
 
 .register {
 	float: right;
-	width: 104px;
+	width: 54px;
 	height: 40px;
 	border: 0;
 	border-left:1px solid #FFF;
@@ -122,21 +126,37 @@ nav div {
 	float: right;
 	height: 47px;
 	margin: 28px 0 0 60px;
-	padding: 15px 17px;
 	border-bottom: 1px solid #E6E6E6;
 	border-right: 1px solid #E6E6E6;
 	border-radius: 6px;
 	font-size: 16px;
 	color: #000;
-	line-height: 17px;
 	background-color: #FFF;
 }
 
-nav a:hover div {
+nav a {
+	display: inline-block;
+    padding: 0 15px;
+    height: 47px;
+    color: #333;
+    line-height: 45px;
+    box-sizing: border-box;
+}
+
+nav div:hover {
 	color: #FFF;
 	background-color: #1D7AD9;
 }
-nav a:focus div {
+nav div:focus {
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+
+nav a:hover {
+	color: #FFF;
+}
+
+nav a:foucs {
 	color: #FFF;
 	background-color: #1D7AD9;
 }
@@ -144,6 +164,10 @@ nav a:focus div {
 .checked {
 	color: #FFF;
 	background-color: #1D7AD9;
+}
+
+.checked a {
+	color: #fff;
 }
 
 .nav-bg {
@@ -175,8 +199,23 @@ nav a:focus div {
 	color: #CCC;
 	text-align: center;
 	font-size: 18px;
-	color: #FF7F02;
     letter-spacing: 0;
+}
+
+.group:hover > .group-number {
+	background-color: #FF7F02!important;
+	color: #FFF;
+}
+.group:hover > .group-line {
+	background-color: #FF7F02!important;
+	color: #FFF;
+}
+.group:hover > .group-grey {
+	color: #FF7F02!important;
+}
+
+.group-grey {
+	color: #CCC;
 }
 
 .box {
@@ -417,6 +456,8 @@ footer {
 }
 
 .footer-about {
+	float: right;
+	width: 230px;
 }
 
 .footer-touch {
@@ -538,12 +579,21 @@ footer span a:hover p {
 	}
 
 	.footer-about {
-		margin-top: 20px;
+		float: left;
+	}
+
+	.clear {
+		clear: both;
 	}
 
 	.footer-touch {
-		float: left!important;
+		float: none!important;
 		margin-top: 20px;
+	}
+
+	.QR-code {
+		float: none!important;
+		margin-bottom: 20px;
 	}
 
 	footer span a p {
@@ -558,7 +608,18 @@ footer span a:hover p {
 	}
 
 	.box {
-		width: 250px;
+		float: none!important;
+		margin: 0 auto;
+		width: 70%;
+	}
+
+	.group {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
+	#group {
+		margin: 20px auto 30px;
 	}
 }
 
@@ -566,11 +627,18 @@ footer span a:hover p {
 	nav div {
 		width: 23%;
 		margin: 28px 1% 0;
-		padding: 15px 7px;
 		text-align: center;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		overflow: hidden;
+	}
+
+	nav a {
+    	padding: 0 5px;
+		width: 100%;
+		text-overflow: ellipsis;
+    	white-space: nowrap;
+    	overflow: hidden;
 	}
 }
 
