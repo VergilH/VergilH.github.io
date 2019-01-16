@@ -690,6 +690,9 @@ footer span a:hover p {
 }
 
 @media screen and (max-width: 460px) {
+	nav {
+		height: 80px;
+	}
 	nav div {
 		display: none;
 		width: 100%;
