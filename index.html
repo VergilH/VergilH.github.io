@@ -2,221 +2,36 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,width=device-width">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <title>51包装</title>
-  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
-  <script src="js/bootstrap.js"></script>
-  <script>
-    $(document).ready(function(){
-       $(".nav-bg nav div").hover(function(){
-            $(this).addClass("shadow");
-            $(this).siblings('div').removeClass("checked");
-       });
-   });
-
-    $(document).ready(function(){
-       $("#group .box").hover(function(){
-            $("span",this).addClass("nothing");
-            $("span",this).siblings("span").removeClass("group-default orange");
-       });
-   });
-  </script>
+	<title>登陆</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-
-  <div class="header-bg">
-  	<header>
-  		<p class="header-text">客服热线：010-594-78634</p>
-  		<button class="register" type="button">
-  			<div>注册</div>
-  		</button>
-  		<button class="login" type="button">
-  			<div>登陆</div>
-  		</button>
-  	</header>
-  </div>
-
-  <div class="nav-bg">
-  	<nav>
-      <button class="btn nav-btn" type="button"><img src="images/menu.png"></button>
-      <div class="dropdown">
-        <div class="dropdown-btn"><a href="#">首页</a></div>
-        <div class="shadow dropdown-btn"><a href="#">在线定制</a></div>
-        <div class="shadow dropdown-btn"><a href="#">标准箱</a></div>
-        <div class="shadow dropdown-btn"><a href="#">品质保障</a></div>
-      </div>
-     
-  		<div class="shadow"><a href="#">品质保障</a></div>
-  		<div class="shadow"><a href="#">标准箱</a></div>
-  		<div class="shadow"><a href="#">在线定制</a></div>
-  		<div class=""><a href="#">首页</a></div>
-  	</nav>
-  </div>
-
-  <group id="group">
-    <div class="pull-right box">
-    <div class="group">
-      <span class="group-number">1</span>
-      <span class="group-line"></span>
-      <span class="group-grey group-hidden">1.定制纸箱</span>
-    </div>
-    <div class="group">
-      <span class="group-number">2</span>
-      <span class="group-line"></span>
-      <span class="group-grey group-hidden">2.选择数量</span>
-    </div>
-    <div class="group">
-      <span class="group-number">3</span>
-      <span class="group-line"></span>
-      <span class="group-grey group-hidden">3.上传附件</span>
-    </div>
-    <div class="group">
-      <span class="group-number">4</span>
-      <span class="group-line"></span>
-      <span class="group-grey group-hidden">4.确认下单</span>
-    </div>
-    </div>
-  </group>
-
-  <main>
-
-    <div class="text-22 text-black main-title">请您按照以下步骤来定制您的纸箱</div>
-
-    <div class="main-content">
-
-      <div class="main-tab radius">
-        <img class="icon-box" src="images/box.png">
-        <p class="text-blue text-18">选择箱型</p>
-      </div>
-
-      <form class="main-choise main-content1" action="">
-        <input type="radio" name="选择箱型" checked="checked" id="对口箱">
-        <label class="middle1" for="对口箱">对口箱</label>
-        <input type="radio" name="选择箱型" id="飞机盒">
-        <label class="middle1" for="飞机盒">飞机盒</label>
-        <input type="radio" name="选择箱型" id="天地盖">
-        <label class="middle1" for="天地盖">天地盖</label>
-        <select name="">
-          <option class="hidden" value="">查看详情</option>
-          <option value="">查看详情</option>
-          <option value="">查看详情</option>
-          <option value="">查看详情</option>
-        </select>
-      </form>
-
-      <div class="main-tab">
-        <img class="icon-square" src="images/square.png">
-        <p class="text-blue text-18">确定尺寸</p>
-      </div>
-
-      <form class="main-choise main-content2" action="">
-        <input type="radio" name="确定尺寸" checked="checked" id="外径">
-        <label class="middle2" for="外径">外径</label>
-        <div>
-          长<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
-        </div>
-        <div>
-          宽<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
-        </div>
-        <div>
-          高<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
-        </div>
-        <select name="">
-          <option class="hidden" value="">查看详情</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-        </select>
-        <br>
-        <input type="radio" name="确定尺寸" id="内径">
-        <label class="middle2" for="内径">内径</label>
-        <div>
-          长<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
-        </div>
-        <div>
-          宽<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
-        </div>
-        <div>
-          高<input class="middle2" type="text" name="" oninput="value=value.replace(/[^\d]/g,'')">mm
-        </div>
-      </form>
-
-      <div class="main-tab">
-        <img class="icon-scissors" src="images/scissors.png">
-        <p class="text-blue text-18">选择材质</p>
-      </div>
-
-      <form class="main-choise main-content2" action="">
-        <input type="radio" name="选择材质" checked="checked" id="三层A瓦优质1">
-        <label class="middle3" for="三层A瓦优质1">三层A瓦优质</label>
-        <input type="radio" name="选择材质" id="三层A瓦优质2">
-        <label class="middle3" for="三层A瓦优质2">三层A瓦优质</label>
-        <input type="radio" name="选择材质" id="三层A瓦优质3">
-        <label class="middle3" for="三层A瓦优质3">三层A瓦优质</label>
-        <input type="radio" name="选择材质" id="三层A瓦优质4">
-        <label class="middle3" for="三层A瓦优质4">三层A瓦优质</label>
-        <input type="radio" name="选择材质" id="三层A瓦优质5">
-        <label class="middle3 no-margin" for="三层A瓦优质5">三层A瓦优质</label>
-        <select name="">
-          <option class="hidden" value="">查看详情</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-        </select>
-      </form>
-
-      <div class="next-step">
-        <button class="btn" type="button">下一步</button>
-      </div>
-
-    </div>
-  </main>
-  
-
-  <div class="footer-bg">
-  	<footer>
-      <div class="pull-left">
-  		  <span>
-  			 <p class="bold-text">51包装网— 纸箱包装首选服务平台</p>
-  		  </span>
-      </div>
-      <div class="pull-left footer-name">
-  		  <span>
-  			 <a href="#"><p class="regular-text pull-left blank">关于我们</p></a>
-  			 <a href="#"><p class="regular-text pull-left blank">配送流程</p></a>
-  			 <a href="#"><p class="regular-text">联系我们</p></a>
-  			 <a href="#"><p class="regular-text pull-left blank">下单指南</p></a>
-  			 <a href="#"><p class="regular-text">媒体介绍</p></a>
-  		  </span>
-      </div>
-      
-      <div class="footer-about">
-
-      <div class="pull-left footer-touch">
-        <span class="regular-text">
-          <p class="regular-text">TEL:400-0000-000</p>
-        </span>
-        <span class="regular-text">
-          <p class="regular-text">企业QQ:123456789</p>
-        </span>
-        <span class="regular-text">
-          <p class="regular-text">微信号:XXXXXXX</p>
-        </span>
-      </div>  
-      <div class="pull-right QR-code">
-        <img src="images/QRcode.png">
-      </div>
-      <div class="clear"></div>
-
-      </div>
-  	</footer>
-  </div>
-
-  <div class="copyright">
-  	<p>北京五一包装科技有限公司Copyright ©2015&#12288;&#12288;51baozhuang.com015&#12288;All rights reserved.&#12288;京icp备99999999-1</p>
-  </div>
+	<header>
+		<a href="javascript:window.close();">
+			<p class="close">关闭</p>
+		</a>
+		<p class="signin"><b>登陆</b></p>
+		<a href="">
+			<p class="signup">注册</p>
+		</a>
+	</header>
+	<main>
+		<form action="">
+			<img class="icon-phone" src="images/phone.png">
+			<input type="text" placeholder="请输入手机号" name="user">
+			<img class="icon-lock" src="images/lock.png">
+			<input type="password" placeholder="请输入密码" name="password">
+		</form>
+		<button type="submit">
+			<p class="signin">登陆</p>
+		</button>
+	</main>
+	<footer>
+		<a href="">
+			<p>忘记密码?</p>
+		</a>
+	</footer>
 </body>
 </html>

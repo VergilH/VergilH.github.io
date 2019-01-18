@@ -1,0 +1,746 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: microsoft YaHei!important;
+}
+
+button {
+	padding: 0;
+	border: none;
+}
+
+
+/*文字样式*/
+
+
+.text-grey {
+	color: #CCC!important;
+}
+
+.text-18 {
+	font-size: 18px!important;
+}
+
+.text-22 {
+	font-size: 22px!important;
+}
+
+.text-black {
+	color: #333!important;
+	font-weight: bold;
+}
+
+.orange {
+	color: #FF7F02!important;
+}
+
+.text-blue {
+	color: #1D7AD9!important;
+}
+
+a:hover {
+	text-decoration: none!important;
+}
+a:focus {
+	text-decoration: none!important;
+}
+
+/*页首*/
+
+header {
+	position: relative;
+	top: 0;
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+
+.header-bg {
+	position: relative;
+	width: 100vw;
+	height: auto;
+	background-color: #1D7AD9;
+	overflow: hidden;
+}
+
+.header-text {
+	display: inline;
+	line-height: 30px;
+}
+
+.login {
+	float: right;
+	width: 55px;
+	height: 40px;
+	border: 0;
+	border-left: 1px solid #FFF;
+	box-sizing: border-box;
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+
+.register {
+	float: right;
+	width: 54px;
+	height: 40px;
+	border: 0;
+	border-left:1px solid #FFF;
+	border-right:1px solid #FFF;
+	box-sizing: border-box;
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+
+header button {
+	padding: 0;
+	border: 0;
+}
+
+header button:hover div{
+	background-color: #FFF!important;
+	color: #000;
+}
+header button:focus div{
+	background-color: #FFF;
+	color: #000;
+}
+
+/*导航*/
+
+nav {
+	position: relative;
+	max-width: 1200px;
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	padding-right: 2px;
+}
+
+nav div {
+	float: right;
+	height: 47px;
+	margin: 28px 0 0 60px;
+	border-bottom: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+	border-radius: 6px;
+	font-size: 16px;
+	color: #000;
+	background-color: #FFF;
+}
+
+nav a {
+	display: inline-block;
+    padding: 0 15px;
+    height: 47px;
+    color: #333;
+    line-height: 45px;
+    box-sizing: border-box;
+}
+
+nav div:hover {
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+nav div:focus {
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+
+nav a:hover {
+	color: #FFF;
+}
+
+nav a:foucs {
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+
+.dropdown {
+	display: none;
+	padding: 80px 0 0;
+	height: auto;
+}
+
+.nav-btn {
+	z-index: 10;
+	display: none;
+	position: absolute;
+    top: 20px;
+    right: 20px;
+	padding: 0 10px;
+	width: 42px;
+	height: 40px;
+}
+
+nav button:hover + .dropdown {
+	display: block!important;
+}
+
+nav button:foucs + .dropdown {
+	display: block!important;
+}
+
+.dropdown:hover {
+	display: block!important;
+    background-color: #f9f9f9;
+}
+
+.dropdown:foucs {
+	display: block!important;
+    background-color: #f9f9f9;
+}
+
+.checked {
+	color: #FFF;
+	background-color: #1D7AD9;
+}
+
+.checked a {
+	color: #fff;
+}
+
+.nav-bg {
+	position: relative;
+	width: 100vw;
+	height: auto;
+	background-color: #F9F9F9;
+	overflow: hidden;
+}
+
+
+/*步骤状态*/
+
+#group {
+	display: block;
+    position: relative;
+    margin: 40px auto;
+    overflow: auto;
+    max-width: 1200px;
+	width: 100%;
+    height: auto;
+}
+
+.group {
+	display: inline-block;
+	position: relative;
+	width: 160px;
+	height: auto;
+	color: #CCC;
+	text-align: center;
+	font-size: 18px;
+    letter-spacing: 0;
+}
+
+.group:hover > .group-number {
+	background-color: #FF7F02!important;
+	color: #FFF;
+}
+.group:hover > .group-line {
+	background-color: #FF7F02!important;
+	color: #FFF;
+}
+.group:hover > .group-grey {
+	color: #FF7F02!important;
+}
+
+.group-grey {
+	color: #CCC;
+}
+
+.box {
+    font-size: 0;
+    letter-spacing: -3px;
+}
+
+.group-default {
+	background-color: #FF7F02!important;
+}
+
+.group-number {
+	position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+	border-radius: 12px;
+	background-color: #CCC;
+	line-height: 24px;
+	font-size: 14px;
+	color: #FFF;
+}
+
+.group-line {
+	z-index: -1;
+    display: inline-block;
+    position: relative;
+    bottom: 28px;
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #CCC;
+}
+
+
+/*主体*/
+
+main {
+	position: relative;
+}
+
+.main-content {
+	margin: 0 auto;
+    margin-bottom: 52px;
+	border: 1px solid #E8E8E8;
+    border-radius: 10px 10px 0 0;
+	max-width: 1200px;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.main-title {
+	max-width: 1200px;
+	width: 100%;
+    margin: 3px auto 16px;
+    padding: 0 0 0 5px;
+    border-left: 3px solid #1D7AD9;
+    border-radius: 1px;
+    box-sizing: border-box;
+    line-height: 22px;
+}
+
+.main-tab {
+	position: relative;
+	width: 100%;
+	height: 45px;
+	background-color: #F3F3F3;
+	line-height: 45px;
+	font-weight: bold;
+}
+
+.icon-box {
+	float: left;
+	margin: 15px 11.5px;
+}
+
+.icon-square {
+	float: left;
+	margin: 12.5px 10px;
+}
+
+.icon-scissors {
+	float: left;
+	margin: 12.5px 13.5px;
+}
+
+.radius {
+	border-radius: 10px 10px 0 0;
+}
+
+.main-choise {
+	position: relative;
+	width: 100%;    
+	padding: 0 0 0 45px;
+	border: 1px solid #E8E8E8;
+    border-width: 1px 0;
+    color: #666;
+    font-size: 18px;
+	background-color: #FBFCFF;
+}
+
+input[type="text"] {
+	margin: 0 4px 0 8px;
+	width: 68px;
+    height: 28px;
+    border: 1px solid #E8E8E8;
+    background-color: #FBFCFF;
+}
+
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+input[type="radio"]+ label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 16px 3px 0;
+    border-radius: 50%;
+    border: 1px solid #D6D6D6;
+    text-indent: 1.5px;
+    font-size: 18px;
+    line-height: 1; 
+    vertical-align: middle;
+}
+input[type="radio"]:checked + label::before {
+    border: 7px solid #1D7AD9;
+    background-color: #FFF;
+    background-clip: content-box;
+}
+
+select {
+	position: absolute;
+	top: 50%;
+	right: 1.4%;
+	float: right;
+	margin-top: -18px!important;
+	width: 128px;
+    height: 36px;
+    padding-left: 17px;
+    border: 1px solid #E8E8E8;
+    color: #999!important;
+    font-size: 14px!important;
+    appearance: none; 
+  	-moz-appearance: none;  
+  	-webkit-appearance: none;
+    background: #FFF url(../images/arrow.png) 95% center no-repeat;
+}
+
+label {
+	margin-right: 60px;
+	margin-bottom: 0!important;
+	color: #666;
+	font-weight: normal!important;
+	align-items: center;
+}
+form div {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.middle1 {
+	line-height: 84px;
+}
+
+.middle2 {
+	line-height: 50.5px;
+}
+
+.middle3 {
+	line-height: 101px;
+}
+
+.next-step {
+	position: relative;
+	width: 100%;
+	height: 286px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #FFF;
+}
+
+main button {
+	margin: 142px auto 0;
+	border: none!important;
+	width: 179px;
+	height: 46px;
+	background: #E15053;
+	line-height: 46px;
+	font-size: 24px!important;
+}
+
+main button:hover {
+	color: #999!important;
+	outline: none;
+	background: #d43f3a;
+}
+
+main button:focus {
+	color: #999!important;
+	outline: none!important;
+	background: #d43f3a;
+}
+
+.main-content1 {
+    padding: 0 140px 0 45px;
+}
+
+.main-content2 {
+    padding: 20px 140px 20px 45px;
+}
+
+.no-margin {
+	margin-right: 0!important;
+}
+
+
+/*页尾*/
+
+footer {
+	position: relative;
+	margin: 0 auto;
+	padding-top: 58px;
+	max-width: 1200px;
+	width: 100%;
+	height: 239px;
+	color: #FFF;
+	background-color: #F9F9F9;
+}
+
+.footer-name {
+	margin: 0 0 0 180px;
+	width: 240px;
+	height: auto;
+}
+
+.blank {
+	margin-right: 20px;
+}
+
+.footer-about {
+	float: right;
+	width: 230px;
+}
+
+.footer-touch {
+	margin: 0 10px 0 0;
+}
+
+.footer-bg {
+	position: relative;
+	width: 100vw;
+	height: auto;
+	background-color: #F9F9F9;
+	overflow: hidden;
+}
+
+footer span a:hover p {
+	text-decoration: none!important;
+	color: #1d7ad9;
+}
+
+
+/*声明*/
+
+.copyright {
+	position: relative;
+	margin: 0 auto;
+	width:100vw;
+	line-height: 33px;
+	background-color: #1D7AD9;
+	text-align: center;
+}
+.copyright p {
+	margin-bottom: 0;
+	font-size: 12px;
+	color: #FFF;
+}
+
+/*字体颜色大小*/
+
+.regular-text {
+	font-size: 14px;
+	color: #999;
+}
+
+.bold-text {
+	font-size: 18px;
+	color: #999;
+}
+
+
+/*媒体查询*/
+
+@media screen and (max-width: 1215px) {
+	header {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	nav {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#group {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.main-content {
+
+	}
+
+	main {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	footer {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.copyright {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.footer-name {
+		margin: 0 0 0 70px;
+	}
+}
+
+@media screen and (max-width: 875px) {
+
+	nav div {
+		margin-left: 20px;
+	}
+
+
+	.group {
+		width: 125px;
+	}
+
+
+	form div {
+		display: block;
+		margin: 5px 0;
+	}
+
+	.middle3 {
+    	display: block;
+    	line-height: 60px;
+	}
+
+	footer {
+		height: auto;
+	}
+
+	.footer-name {
+		float: none!important;
+    	margin: 0;
+    	width: 100%;
+	}
+
+	.footer-name span a p {
+		float: none!important;
+    	text-align: center;
+	}
+
+	.footer-about {
+		width: 100%;
+	}
+
+	.blank {
+		margin-right: 0;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	.footer-touch {
+		float: none!important;
+		margin-top: 20px;
+	}
+
+	.QR-code {
+		float: none!important;
+		margin-bottom: 20px;
+	}
+
+	footer span a p {
+		clear: both;
+	}
+
+	footer div {
+		float: none!important;
+		width: 100%;
+    	text-align: center;
+	}
+}
+
+@media screen and (max-width: 685px) {
+	.middle1 {
+		display: block;
+		line-height: 60px;
+	}
+
+	.box {
+		float: none!important;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.group {
+		margin-bottom: 10px;
+		width: 25%;
+	}
+
+	#group {
+		margin: 40px auto 20px;
+	}
+
+	.group-line {
+		width: 100%;
+	}
+
+	.group-hidden {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	nav {
+		height: 80px;
+	}
+	nav div {
+		display: none;
+		width: 100%;
+		margin: 0;
+		border: none;
+		text-align: center;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		background-color: #f9f9f9;
+	}
+
+	nav a {
+    	padding: 0 5px;
+		width: 100%;
+		text-overflow: ellipsis;
+    	white-space: nowrap;
+    	overflow: hidden;
+	}
+
+	.nav-btn {
+		display: block;
+	}
+
+	.dropdown-btn {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	header button {
+		width: 50px!important;
+	}
+
+	.main-content1 {
+		padding: 0 130px 0 15px;
+	}
+
+	.main-content2 {
+		padding: 0 130px 0 15px;
+	}
+
+	label {
+		margin-right: 0;
+	}
+
+	select {
+		width: 105px;
+		padding-left: 10px;
+	}
+}
