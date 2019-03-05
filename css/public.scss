@@ -133,7 +133,10 @@ body {
 	background-color: $white;
 }
 
-header {
+header {    
+	z-index: 10;
+	position: fixed;
+    top: 0;
 	width: $width;
 	height: 42.5px;
 	text-align: center;

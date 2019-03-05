@@ -41,13 +41,82 @@ header {
 		}
 	}
 }
+
+
+
+.dropdown {
+    position: relative;
+    margin-top: 42.5px;
+    width: $width / 3;
+    height: 40px;
+    @include greyborder-bot;
+    box-sizing: border-box;
+    line-height: 37px;
+    text-align: center;
+    color: $grey;
+    background-color: $white;
+
+    //下箭头
+    .arrowdown {
+    	position: relative;
+    	display: inline-block;
+    	width: $width;
+    	&:after {
+    		content: "\00A0";
+    		color: #5fc0cd;
+    		position: absolute;
+    		top: 17px;
+    		right: 6px;
+    		width: 1px;
+ 			height: 0;
+ 			border-width: 4px;
+ 			border-style: solid;
+ 			border-color: #afbac0 transparent transparent transparent;
+    	}
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: $width;
+    height: 40px;
+    background-color: $white;
+    box-sizing: border-box;
+    @include greyborder-bot;
+    z-index: 1;
+}
+
+$margin_top: 2px;
+
+.margin_top_2 {
+	margin-top: $margin_top;
+}
+
+.margin_top_40 {
+	margin-top: $margin_top + 40;
+}
+
+.margin_top_80 {
+	margin-top: $margin_top + 80;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.greyline {
+    border-right: 1px solid $frenchgrey;
+}
+
 menu {
-	margin: 0;
+	margin: 42.5px 0 0;
 	padding: 0;
 	width: $width;
 	height: 40px;
 	letter-spacing: -5px;
-	//下拉菜单
+//下拉菜单
+/*
 	ul {
 		display: inline-block;
 		margin: 0;
@@ -66,9 +135,6 @@ menu {
         	letter-spacing: 0;
         }
 	}
-	.greyline {
-        border-right: 1px solid $frenchgrey;
-	}
 	.drop-down{
 	    height: 40px;
 	}
@@ -77,29 +143,16 @@ menu {
         opacity: 0.3;
         height: 0;
         overflow: hidden;
-        transition: all 1s ease;
+        transition: all .5s ease;
     }
     .drop-down:hover .drop-down-content{
         opacity: 1;
         height: 40px;
         @include greyborder-bot;
     }
-    //下箭头
-    .arrowdown {
-    	position: relative;
-    	&:after {
-    		content: "\00A0";
-    		color: #5fc0cd;
-    		position: absolute;
-    		top: 18px;
-   			right: 6px;
-    		width: 1px;
- 			height: 0;
- 			border-width: 4px;
- 			border-style: solid;
- 			border-color: #afbac0 transparent transparent transparent;
-    	}
-    }
+    */
+
+    
 }
 
 main {
@@ -142,12 +195,12 @@ main {
 	}
 	.cost {
 		display: inline-block;
-		margin: 29.5px 22px 0 0;
+		margin: 29px 22px 0 0;
 	}
 	.right-arrow {
 		position: absolute;
     	top: 31.5px;
-    	left: 74px;
+    	left: 79px;
     	border-right: 3px solid $blue;
     	border-bottom: 3px solid $blue;
     	transform: rotate(-45deg);
