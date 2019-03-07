@@ -1,0 +1,110 @@
+@charset 'utf-8';
+@import "public";
+
+body {
+	background: $blue;
+	color: $white;
+	letter-spacing: 1px;
+}
+
+p {
+	margin-bottom: 5px;
+}
+
+header {
+	margin-bottom: 14px;
+	@include greyborder-bot;
+	border-color: #74e4db;
+	text-align: center;
+	button {
+		position: absolute;
+	}
+	.home-icon {
+		left: 12px;
+		top: 11px;
+		width: 27px;
+		height: 22px;
+		background: url(../images/home.png);
+		background-size:  100% 100%;
+	}
+	.info-icon {
+		right: 12px;
+		top: 10.5px;
+		width: 24px;
+		height: 24px;
+		background: url(../images/info.png);
+		background-size:  100% 100%;
+	}
+	p {
+		margin: 0;
+	}
+}
+
+main {
+	padding: 0 35px 10px;
+	width: $width;
+	box-sizing: border-box;
+	.center-img {
+		display: block;
+		margin: 0 auto 10px;
+		width: $width - 25;
+	}
+}
+
+
+content {
+	display: inline-block;
+	padding: 3px 35px 20px;
+	width: $width;
+	height: 82px;
+	background: $white;
+	color: #a6a6a6;
+	box-sizing: border-box;
+	.deepblack {
+		color: #515151;
+	}
+	.frenchgrey {
+		font-size: $font-size - 4;
+		color: #d6d6d6;
+	}
+	p {
+		margin: 0;
+	}
+	.content-middle {
+		margin-top: 8px;
+	}
+}
+
+.footer_margin {
+	margin-bottom: 82px;
+}
+
+.greyborder {
+	width: $width;
+	@include greyborder-bot;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: $width;
+	background-color: rgba(41,189,224,.5);
+	.btn {
+		margin: 20px $width / 25;
+		width: $width - 58;
+		height: 42px;
+		border-radius: 5px;
+		a {
+			display: block;
+    	width: $width;
+    	height: inherit;
+		}
+	}
+	.bg-red {
+		line-height: 42px;
+		background-color: $red;
+	}
+	.bg-orange {
+		background-color: $orange;
+	}
+}

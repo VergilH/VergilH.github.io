@@ -19,126 +19,172 @@ h1{
 //变量
 $width: 100%;
 
-$blue : #5fc0cd;
+$blue : #29bde0;
 
-$red : #e63b0e;
+$frenchblue : #69d1e9;
 
-$grey : #999;
+$orange : #fbb435;
+
+$blue-grey : #b9e9f5;
+
+$deepgrey : #9a9a9a;
+
+$red : #f66f6f;
+
+$grey : #c9c9c9;
 
 $frenchgrey : #e1e5e7;
 
+$littlegrey : #f0f0f0;
+
 $white : #fff;
 
-$black : #333;
+$yellow : #ffc865;
 
-$orange : #e63b0e;
+$black : #787878;
 
-$font-size : 18px;
+$deepblack : #464646;
+
+$font-size : 16px;
 
 //混合器
+@mixin greyborder {
+  border: 1px solid $frenchgrey;
+  box-sizing: border-box;
+}
 @mixin greyborder-top {
-	border-top: 1px solid $frenchgrey;
+  border-top: 1px solid $frenchgrey;
 }
 @mixin greyborder-bot {
-	border-bottom: 1px solid $frenchgrey;
+  border-bottom: 1px solid $frenchgrey;
 }
 @mixin greyborder-left {
-	border-left: 1px solid $frenchgrey;
+  border-left: 1px solid $frenchgrey;
 }
 @mixin greyborder-right {
-	border-right: 1px solid $frenchgrey;
+  border-right: 1px solid $frenchgrey;
 }
 
+
+//重置默认样式
 p {
-	display: inline-block;
-	margin: 0;
+  display: inline-block;
+  margin: 0;
 }
 
 a {
-	text-decoration: none;
-	outline: none;
-	&:hover {
-		text-decoration: none;
-		outline: none;
-	}
-	&:focus {
-		text-decoration: none;
-		outline: none;
-	}
+  text-decoration: none;
+  outline: none;
+  &:hover {
+    text-decoration: none;
+    outline: none;
+  }
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
 }
 
 button {
-	padding: 0;
-	border: none;
-	outline: none;
+  padding: 0;
+  border: none;
+  outline: none;
 }
 
+
+//左右border
 .border-right {
-	@include greyborder-right;
+  @include greyborder-right;
 }
 .border-left {
-	@include greyborder-left;
+  @include greyborder-left;
 }
 
 //字体颜色
 .red-text {
-	color: $red;
+  color: $red;
 }
 
 .blue-text {
-	color: $blue;
+  color: $blue;
 }
 
 .grey-text {
-	color: $grey;
+  color: $grey;
+}
+
+.deepgrey-text {
+  color: $deepgrey;
 }
 
 .white-text {
-	color: $white;
+  color: $white;
 }
 
 .black-text {
-	color: $black;
+  color: $black;
+}
+
+.deepblack-text {
+  color: $deepblack;
 }
 
 .orange-text {
-	color: $orange;
+  color: $orange;
+}
+
+.yellow-text {
+  color: $yellow;
 }
 
 //字体大小 
 .font-lg {
-	margin: 20px 0 10px;
-    font-size: $font-size;
+    font-size: $font-size + 2;
 }
 .font-nm {
-    font-size: $font-size - 2;
+    font-size: $font-size;
 }
 .font-sm {
-    font-size: $font-size - 4;
+    font-size: $font-size - 2;
 }
 
 //浮动
 .left {
-	float: left;
+  float: left;
 }
 .right {
-	float: right;
+  float: right;
 }
 .clearfloat {
-	clear: both;
+  clear: both;
 }
+
+
+//水平居中
+.setmiddle {
+  margin: 0 auto;
+}
+
+
+//垂直水平居中
+.setcenter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+//默认样式
 
 body {
-	margin: 0;
-	background-color: $white;
+  margin: 0;
+  background-color: $littlegrey;
 }
 
-header {    
-	z-index: 10;
-	position: fixed;
-    top: 0;
-	width: $width;
-	height: 42.5px;
-	text-align: center;
-	background: $blue;
+header {
+  width: $width;
+  height: 44.5px;
+  text-align: center;
+  background: $blue;
 }

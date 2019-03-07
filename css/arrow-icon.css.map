@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,YAAa;EACX,YAAY,EAAE,iBAAiB;EAC/B,aAAa,EAAE,iBAAiB;EAChC,SAAS,EAAE,cAAc",
+"sources": ["arrow-icon.scss"],
+"names": [],
+"file": "arrow-icon.css"
+}
