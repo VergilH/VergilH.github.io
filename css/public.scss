@@ -1,26 +1,8 @@
-/*
-#定义混合器  使用
-@mixin borderRadius {
-  border-radius: 5px;
-  -webkit-border-radius；5px；
-  -moz-border-radius:5px;
-}
-
-#通过@include来使用这个混合器
-h1{
-  font-size: 28px;color: #333;
-  @include borderRadius;
-}
-*/
-
 @charset 'utf-8';// 不加这行，文件中有中文时会报错
+@import "var";
 
-@import "color";
+//公用样式
 
-//变量
-$width: 100%;
-
-$font-size : 16px;
 
 //混合器
 @mixin greyborder {
@@ -39,33 +21,6 @@ $font-size : 16px;
 @mixin greyborder-right {
   border-right: 1px solid $frenchgrey;
 }
-
-
-//重置默认样式
-p {
-  display: inline-block;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  outline: none;
-  &:hover {
-    text-decoration: none;
-    outline: none;
-  }
-  &:focus {
-    text-decoration: none;
-    outline: none;
-  }
-}
-
-button {
-  padding: 0;
-  border: none;
-  outline: none;
-}
-
 
 //左右border
 .border-right {
@@ -113,14 +68,14 @@ button {
 }
 
 //字体大小 
-.font-lg {
-    font-size: $font-size + 2;
+.font_lg {
+    font-size: $font-size + 2;//18
 }
-.font-nm {
-    font-size: $font-size;
+.font_nm {
+    font-size: $font-size;//16
 }
-.font-sm {
-    font-size: $font-size - 2;
+.font_sm {
+    font-size: $font-size - 2;//14
 }
 
 //浮动
@@ -140,7 +95,6 @@ button {
   margin: 0 auto;
 }
 
-
 //垂直水平居中
 .setcenter {
   position: relative;
@@ -149,17 +103,21 @@ button {
   justify-content: center;
 }
 
-
-//默认样式
-
-body {
-  margin: 0;
-  background-color: $littlegrey;
+//
+.setwidth {
+  width: 1200px;
 }
 
-header {
-  width: $width;
-  height: 44.5px;
-  text-align: center;
-  background: $blue;
+@media screen and (max-width:1200px) {
+  nav .setwidth {
+	padding: 0!important;
+  }
+  .setwidth {
+    width: $width;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+  .logo {
+	margin-left: 15px;
+  }
 }

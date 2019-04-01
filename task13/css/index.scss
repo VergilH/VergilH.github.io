@@ -1,0 +1,89 @@
+@charset 'utf-8';
+@import "public";
+
+.hbg-icon {
+	z-index: 15;
+	position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 18px;
+    height: 16px;
+	background: url(../images/sm-hbg.png) 100% no-repeat;
+	background-size: cover;
+}
+
+.left-menu {
+	z-index: 10;
+	position: relative;
+	width: $width - 25;
+}
+
+nav {
+	margin: 14px 6%;
+	width: $width - 12;
+	height: 60px;
+	@include greyborder;
+	text-align: center;
+	background : $white;
+	.right-arrow {
+		position: absolute;
+    	right: 15px;
+    	top: 20px;
+		display: inline-block;
+		margin-left: 15px;
+		width: 16px;
+		height: 16px;
+	}
+}
+
+main {
+	position: relative;
+	margin: 0 6% 20px;
+	width: $width - 12;
+	@include greyborder;
+	background: $white;
+	text-align: center;
+	.title {
+		margin-bottom: 15px;
+		width: $width;
+		height: 45px;
+		@include greyborder-bot;
+		border-color: #fdd793;
+		text-align: center;
+	}
+	a {
+		display: block;
+		margin: 0 9%;
+		width: $width - 18;
+	}
+	.status {
+		margin: 10px 0;
+		font-size: $font-size - 3;
+	}
+	.choise-edition {
+		width: $width;
+		height: 65px;
+		background: $frenchblue;
+	}
+	.big-arrow {
+		position: absolute;
+		top: 180px;
+		right: $width / 50;
+    	background: #fff;
+    	@include arrow;
+	}
+	.spot {
+		display: inline-block;
+		margin: 0 .5px;
+		width: 8px;
+		height: 8px;
+    	border-radius: 4px;
+		background: $littlegrey;
+		&:hover {
+			background: $frenchblue;
+		}
+		&:focus {
+			background: $frenchblue;
+		}
+	}
+}
