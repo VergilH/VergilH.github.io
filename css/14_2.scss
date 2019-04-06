@@ -65,15 +65,16 @@ content {
 		text-align: center;
 	}
 	ul {
-    margin: 0 auto;
+    	margin: 0 auto;
 		padding: 20px 0 0 30px;
-    width: 100px;
+    	width: 100px;
 		color: $green;
+		box-sizing: border-box;
 		li {
-    	margin: 34px 0;
+    		margin: 34px 0;
 			width: 70px;
-    	height: 16px;
-    	line-height: 16px;
+    		height: 16px;
+    		line-height: 16px;
 			list-style-type: none;
 			list-style-image: url(../images/li-circle.png);
 		}
@@ -88,7 +89,7 @@ content {
   background-color: $white;
   div {
 		margin-bottom: 23px;
-    padding: 20px 60px;
+    	padding: 20px 60px;
 		width: 870px;
 		height: 150px;
 		border-bottom: 1px solid #E6E6E6;
@@ -124,7 +125,7 @@ a:focus li{
 
 @media screen and (max-width:1200px) {
 	content {
-		width: 100vw;
+		width: $width;
 		height: auto;
 		margin: 0 auto 50px;
 		padding: 0 15px;

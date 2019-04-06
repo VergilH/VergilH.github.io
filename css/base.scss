@@ -15,7 +15,7 @@ header {
   	position: relative;
   	height: 30px;
   	color: $green;
-  	background-color: #FFF;
+  	background-color: $white;
   	.icon_weixin {
 		background-position: 0 58px;
   	}
@@ -37,12 +37,6 @@ header {
 	width: 30px;
 	height: 30px;
 }
-
-@media screen and (max-width:1200px) {
-	
-}
-
-
 nav {
 	position: relative;
 	height: auto;
@@ -73,6 +67,7 @@ a:focus .nav_btn{
     border-width: 0 0 3px 0;
     border-color: $white;
 }
+//汉堡菜单
 .nav-dropdown-btn {
 	float: right;
     width: 40px;
@@ -87,27 +82,24 @@ a:focus .nav_btn{
 .nav-dropdown {
 	display: none;
 	position: relative;
-	width: 100vw;
+	width: $width;
 	height: 160px;
 	background-color: #29B078;
-	color: #FFF;
+	color: $white;
 	text-align: center;
 }
-
 .nav-dropdown:hover {
 	display: block;
 }
-
 .nav-dropdown:focus {
 	display: block;
 }
-
 .nav-dropdown-menu {
 	position: relative;
 	width: 100%;
 	height: 40px;
 	background-color: #29B078;
-	color: #FFF;
+	color: $white;
 	font-size: 16px;
 	line-height: 40px;
 	p {
@@ -122,27 +114,23 @@ a:hover .nav-dropdown-menu {
 	background-color: #66CD99;
 	text-decoration: none;
 }
-
 a:focus .nav-dropdown-menu {
 	background-color: #66CD99;
 	text-decoration: none;
 }
 a:hover .nav-dropdown-menu > p {
-    border-bottom: 3px solid #FFF;
+    border-bottom: 3px solid $white;
 }
 a:focus .nav-dropdown-menu > p {
-    border-bottom: 3px solid #FFF;
+    border-bottom: 3px solid $white;
 }
-
 #nav-default {
-    border-bottom: 3px solid #FFF;
+    border-bottom: 3px solid $white;
 }
-
 .nav-dropdown a {
-	color: #FFF;
+	color: $white;
 	text-decoration: none;
 }
-
 .dropdown_btn {
 	display: none;
 	position: absolute;
@@ -176,7 +164,7 @@ a:focus .nav-dropdown-menu > p {
 		display: none;
 	}
 }
-
+//页尾
 footer {
 	position: relative;
 	padding-top: 20px;
@@ -208,7 +196,7 @@ footer {
 .line {
 	height: 18px;
     line-height: 18px;
-	border-left: 1px solid #FFF;
+	border-left: 1px solid $white;
 	display: inline-block;
 	margin-left: -1px;
 	padding: 0px 4px 0px 6px;
@@ -229,7 +217,7 @@ footer {
 .footer_copyright {
 	width: $width;
 	height: 25px;
-	color: #FFF;
+	color: $white;
 	border-top: 1px solid #32C086;
 	box-sizing: border-box;
 	line-height: 22px;
@@ -240,7 +228,7 @@ footer {
 	}
 }
 .hidden {
-	display: block;
+	display: inline-block;
 }
 
 @media screen and (max-width:650px) {
@@ -252,20 +240,38 @@ footer {
 	}
 	.footer_content_left {
 		float: none;
+		margin: 0 auto;
+		text-align: center;
 	}
 	.footer_content_right {
 		float: none;
 		width: 160px;
+		margin: 0 auto;
+		text-align: center;
 	}
 	.footer_sm_p {
 		margin: 0;
 	}
 	.footer_wx {
 		float: none;
-		margin: 15px 0;
-		text-align: left;
+		margin: 6px auto 0;
+		text-align: center;
 	}
 	.footer_copyright {
 		height: auto;
+	}
+	.footer_blank,.line {
+		display: block;
+		padding: 0;
+		border-left: none;
+	}
+	.line {
+		margin-left: 0;
+	}
+	.footer_title,.footer_sm_p {
+		display: block;
+	}
+	.hidden {
+		display: none;
 	}
 }
