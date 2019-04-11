@@ -17,12 +17,15 @@ header {
   	color: $green;
   	background-color: $white;
   	.icon_weixin {
+  		cursor: pointer;
 		background-position: 0 58px;
   	}
   	.icon_qq {
+  		cursor: pointer;
 		background-position: 0 29px;
   	}
   	.icon_weibo {
+  		cursor: pointer;
 		background-position: 38px 58px;
   	}
 }

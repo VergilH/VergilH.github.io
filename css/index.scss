@@ -463,9 +463,10 @@ a:hover .main-content-support-circle {
 	padding: 0 15px;
 	width: 20%;
 	box-sizing: border-box;
+	cursor: pointer;
 }
 .main-content-cooperation div:hover {
-    box-shadow: 0px 3px 6px 1px #999;
+	filter: opacity(50%);
 }
 
 .main-content-cooperation-icon1 {
@@ -506,9 +507,14 @@ a:hover .main-content-support-circle {
 	.main-content-cooperation div {
     	display: block;
     	float: none;
-    	margin: 6px auto;
-    	width: $width / 2;
+    	margin: 0;
+    	width: $width;
     	min-width: 300px;
+	}
+	.main-content-cooperation img {
+    	display: block;
+    	margin: 0 auto;
+    	width: 50%;
 	}
 }
 @media screen and (max-width: 425px) {

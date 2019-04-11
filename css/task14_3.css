@@ -34,7 +34,8 @@ menu {
   border: none;
   background-color: #FAFAFA;
   box-sizing: border-box;
-  font: inherit; }
+  font: inherit;
+  cursor: pointer; }
   .menu_btn:focus {
     outline: none;
     color: #fff;

@@ -10,10 +10,13 @@ header {
   color: #29B078;
   background-color: #fff; }
   header .icon_weixin {
+    cursor: pointer;
     background-position: 0 58px; }
   header .icon_qq {
+    cursor: pointer;
     background-position: 0 29px; }
   header .icon_weibo {
+    cursor: pointer;
     background-position: 38px 58px; }
 
 .header_tel {
