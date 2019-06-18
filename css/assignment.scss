@@ -1,0 +1,243 @@
+@import "color";
+@import "public";
+header {
+	position: relative;
+	line-height: 44.5px;
+	align-items: center;
+	color: $white;
+}
+.arrow_icon,.info_icon {
+	position: absolute;
+}
+.info_icon {
+	top: 10px;
+	right: 15px;
+	width: 26px;
+	height: 26px;
+	background: url(../images/assignment/assignment-info.png);
+    background-size: 100% 100%;
+}
+.content {
+	position: relative;
+	margin: 8px 2% 0;
+	width: 96%;
+	box-sizing: border-box;
+	color: $black;
+	background-color: $white;
+	overflow: hidden;
+}
+.setNumber,.distribution {
+	height: 225px;
+	box-sizing: border-box;
+}
+.distribution {
+	padding: 65px 0;
+	width: 20%;
+	border-right: 1px solid $grey;
+	text-align: center;
+}
+.vertical {
+	display: block;
+}
+.setNumber {
+	width: 80%;
+}
+
+.displayNumber,.setting {
+	width: 100%;
+	box-sizing: border-box;
+}
+.displayNumber {
+	padding: 30px 0 20px;
+	height: 195px;
+	text-align: center;
+	color: #a1a1a1;
+	div {
+		display: inline-block;
+		position: relative;
+		width: 50%;
+		&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 8px;
+    	left: 10px;
+    	width: 7px;
+   		height: 7px;
+   		background-color: $blue;
+		}
+	input {
+		display: inline-block;
+    	margin: 0 6px;
+    	width: 20px;
+    	height: 12px;
+    	border: none;
+    	color: #a1a1a1;
+    	text-align: center;
+		}
+	}
+}
+.nothing {
+	display: inline-block;
+		position: relative;
+		width: 50%;
+		&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 8px;
+    	left: 10px;
+    	width: 7px;
+   		height: 7px;
+   		background-color: $orange!important;
+		}
+}
+.setting {
+	text-align: center;
+	border-top: 1px solid $grey;
+	p {
+		position: relative;
+		line-height: 30px;
+		color: $blue;
+		&:after {
+		content: "";
+		position: absolute;
+    	top: 8px;
+    	right: -20px;
+		background-image: url(../images/assignment/assignment-pencil.png);
+		background-size: 100% 100%;
+		width: 14px;
+		height: 14px;
+		}
+	}
+}
+input {
+	position: relative;
+	font-size: 16px;
+}
+.selection-number {
+	padding: 10px 15px;
+	input[type=button] {
+		width: 18px;
+		height: 18px;
+		border: 1px solid #d9d9d9;
+		box-sizing: border-box;
+		background-color: $white;
+	}
+}
+.content-bottom {
+	position: relative;
+	margin-top: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	align-items: center;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    bottom: 4px;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    &:before {
+    	content: '';
+    	width: 10px;
+    	height: 3px;
+    	background-color: blue;
+    }
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    bottom: 5px;
+    width: 30px;
+    height: 18px;
+    border: 1px solid #fab344;
+    border-radius: 3px;
+    background-color: $white;
+    background-image: url(../images/assignment/slider.png);
+    background-size: 12px 10px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #ffe6be;
+}
+input[type=range]::-ms-fill-lower {
+    /*进度条已填充的部分*/
+    height: 22px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #059CFA, white 100%, white);
+}
+
+input[type=range]::-ms-fill-upper {
+    /*进度条未填充的部分*/
+    height: 22px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.leftbtn,.rightbtn {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.leftbtn {
+	left: 0;
+	background-image: url(../images/assignment/decrease.png);
+	background-size: 12px 4px;
+}
+.rightbtn {
+	right: 0;
+	background-image: url(../images/assignment/increase.png);
+	background-size: 12px 12px;
+}
+
+form {
+	input {
+		width: 90%;
+		height: 30px;
+		margin: 5px 5%;
+		border: none;
+		border-bottom: 1px solid $grey;
+		box-sizing: border-box;
+	}
+}
+::-webkit-input-placeholder {
+  color: #d7d7d7;
+}
+::-moz-placeholder {
+  color: #d7d7d7;
+}
+:-ms-input-placeholder {
+  color: #d7d7d7;
+}   
+
+.number {
+	display: inline-block;
+	margin: 0 10px;
+	width: 32px;
+	height: 20px;
+	border: none;
+	box-sizing: border-box;
+	text-align: center;
+	color: $orange;
+	background-color: $grey;
+}
+
+.footer_btn {
+	width: 96%;
+	height: 36px;
+	margin: 8px 2%;
+	padding: 0;
+	border: none;
+	color: $white;
+	background-color: #fab344;
+	&:focus {
+		background-color: #fac399;
+	}
+}

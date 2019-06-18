@@ -1,0 +1,95 @@
+@import "color";
+@import "public";
+body {
+	background-color: $blue;
+}
+header {
+	position: relative;
+	border-bottom: 1px solid #74d4eb;
+	line-height: 44.5px;
+	align-items: center;
+	color: $white;
+}
+
+.arrow_icon,.shutdown_icon {
+	position: absolute;
+	top: 50%;
+}
+.arrow_icon {
+	left: 15px;
+	margin-top: -13px;
+	width: 16px;
+	height: 26px;
+	background: url(../images/assignment/assignment-arrow.png);
+    background-size: 100% 100%;
+}
+.shutdown_icon {
+	margin-top: -12px;
+	right: 15px;
+	width: 24px;
+	height: 24px;
+	background: url(../images/shutdown.png);
+    background-size: 100% 100%;
+}
+
+main {
+	margin: 18px $width - 94 90px;
+	width: $width - 12;
+	text-align: center;
+	overflow: hidden;
+	.choise-person {
+		float: left;
+		margin: 10px $width / 24;
+		width: $width / 4;
+	}
+	.number {
+		//width: 63px;
+		width: $width;
+		padding: $width / 4 0;
+		//height: 50px;
+		border-top: 2.5px solid $white;
+		border-right: 2.5px solid $white;
+		border-left: 2.5px solid $white;
+		background: #f5c97b;
+		box-sizing: border-box;
+		color: #565656;
+	}
+	.name {
+		//width: 63px;
+		width: $width;
+		//height: 13px;
+		border-right: 2.5px solid $white;
+		border-left: 2.5px solid $white;
+		border-bottom: 2.5px solid $white;
+		box-sizing: border-box;
+		background: #83b09a;
+		color: $white;
+		font-size: 12px;
+	}
+	.dead {
+		background-color: #83b09a!important;
+	}
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 88%;
+	height: 89px;
+	margin-left: 6%;
+	border-top: 1px solid #fff;
+	background-color: $blue;
+}
+#footer_btn {
+	position: absolute;
+	top: 20px;
+	left: 12%;
+	width: 76%;
+	height: 36px;
+	padding: 0;
+	color: $white;
+	background-color: #fab344;
+	&:focus {
+		background-color: #fac399;
+	}
+}
