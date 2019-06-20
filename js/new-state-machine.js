@@ -19,6 +19,8 @@ $(document).ready(function(){
 		$(".tip:eq("+ voteI +") .tip_arrow").css("border-left-color","#83b09a");
 		$(".deadInfo").css("display","block");
 		$(".deadInfo").last().css("display","none");
+		$(".sun").css("top","106px");
+		$(".sun").last().css("top","75px");
 		round = round + 4;
 		murderI = round + 0;
 		lastWordI = round + 1;
