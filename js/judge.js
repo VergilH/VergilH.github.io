@@ -58,6 +58,20 @@ $(document).ready(function(){//分辨生死
 		alert("nothing");
 	}
 });
+
+$(".arrow_icon").click(function(){
+	window.history.back();
+});
+$(".shutdown_icon").click(function(){
+	var c = confirm("退出游戏？");
+	if (c == true) {
+		sessionStorage.clear();
+		window.location.href="index.html";
+	} 
+	else {
+		return;
+	}
+});
 /*1
 *23
 *45

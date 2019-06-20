@@ -7,17 +7,37 @@ var murderI = round + 0;
 var lastWordI = round + 1;
 var discussI = round + 2;
 var voteI = round + 3;
-var killed = 0;
 $(document).ready(function(){
 	for (var i = 1; i < dead.length; i=i+2) {
+		$(".tip:eq("+ murderI +")").css("background-color","#83b09a");
+		$(".tip:eq("+ murderI +") .tip_arrow").css("border-left-color","#83b09a");
+		$(".tip:eq("+ lastWordI +")").css("background-color","#83b09a");
+		$(".tip:eq("+ lastWordI +") .tip_arrow").css("border-left-color","#83b09a");
+		$(".tip:eq("+ discussI +")").css("background-color","#83b09a");
+		$(".tip:eq("+ discussI +") .tip_arrow").css("border-left-color","#83b09a");
+		$(".tip:eq("+ voteI +")").css("background-color","#83b09a");
+		$(".tip:eq("+ voteI +") .tip_arrow").css("border-left-color","#83b09a");
+		$(".deadInfo").css("display","block");
+		$(".deadInfo").last().css("display","none");
 		round = round + 4;
 		murderI = round + 0;
 		lastWordI = round + 1;
 		discussI = round + 2;
 		voteI = round + 3;
-		killed = killed + 2;
 	}
 });
+
+$(document).ready(function(){
+	var info = 0,name = 0;
+	for (var i = -1; i < dead.length; i=i+2) {
+		killed = dead[name];
+		deadMan = dead[name]+1;
+		$(".deadInfo:eq("+ info +")").html(deadMan + "号被杀手杀死，真实身份是" + playerNumber[killed]);
+		info++;
+		name = name+2;
+	}
+});
+
 var murder = document.getElementsByClassName("tip")[murderI];
 var lastWord = document.getElementsByClassName("tip")[lastWordI];
 var discuss = document.getElementsByClassName("tip")[discussI];
@@ -40,8 +60,6 @@ var fsm = new StateMachine({
 	],
 	methods: {
 		onEnterStep1: function() {
-			//localStorage.setItem(fsm,'state');
-			//console.log(window.localStorage);
 			sessionStorage.setItem('step','step1');
 			$(".tip:eq("+ murderI +")").css("background-color","#83b09a");
 			$(".tip:eq("+ murderI +") .tip_arrow").css("border-left-color","#83b09a");
@@ -49,8 +67,8 @@ var fsm = new StateMachine({
 				$(".deadInfo").css("display","block");
 			});
 			$(".deadInfo").css("display","block");
-			window.deadMan = dead[killed] + 1;
-			$(".deadInfo").html(deadMan + "号被杀手杀死，真实身份是" + playerNumber[dead[killed]]);
+			//window.deadMan = dead[killed] + 1;
+			//$(".deadInfo").html(deadMan + "号被杀手杀死，真实身份是" + playerNumber[dead[killed]]);
 			$(".sun").css("top","106px");
 		},
 		onEnterStep2: function() {

@@ -130,6 +130,12 @@ main {
   margin: 20px 1% 100px;
   width: 98%; }
 
+.non-display {
+  display: none; }
+
+.display {
+  display: block !important; }
+
 .date {
   position: relative;
   width: 100%;

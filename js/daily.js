@@ -11,15 +11,28 @@ var day = 1, index = 0;
 //动态日期
 $(document).ready(function(){
 	for (var i = -1; i < dead.length; i=i+2) {
-		$("main").append("<div class=date><div class=down_arrow></div></div>");
+		$("main").append("<div class=date></div>");
 		$("main").append("<div class=content><div class=sideline><div class=moon></div><div class=sun></div></div><div class=tips><div class=tip murder><div class=tip_arrow></div><p>杀手杀人</p></div><p class=deadInfo></p><div class=tip id=lastWord><div class=tip_arrow></div><p>亡灵发表遗言</p></div><div class=tip id=discuss><div class=tip_arrow></div><p>玩家依次发言</p></div><div class=tip id=vote><div class=tip_arrow></div><p>全民投票</p></div></div></div>")
-		$(".content").css("display","none");
-		$(".content").last().css("display","block");
-		$(".date:eq("+ index +")").text("第"+NumberToChinese(day)+"天");
+		$(".content").addClass("non-display").removeClass("display");
+		$(".content").last().addClass("display").removeClass("non-display");
+		$(".date:eq("+ index +")").html("<p class=daily></p><div class=down_arrow></div>");
+		$(".daily:eq("+ index +")").text("第"+NumberToChinese(day)+"天");
 		day++;
 		index++;
 	}
+	$(".down_arrow").click(function(){//查看之前天数状态
+		window.arrow = $('.down_arrow').index(this);
+		console.log(arrow);
+		var s = $(".content:eq("+ arrow +")").hasClass("non-display");
+		if (s) {
+			$(".content:eq("+ arrow +")").addClass("display").removeClass("non-display");
+		} 
+		else {
+			$(".content:eq("+ arrow +")").addClass("non-display").removeClass("display");
+		}
+	});
 });
+
 
 var tip = document.getElementsByClassName('tip');
 var tipArrow = document.getElementsByClassName('tip_arrow');
@@ -126,3 +139,17 @@ function NumberToChinese(num){
 	}
 	return chnStr;
 }
+
+$(".arrow_icon").click(function(){
+	window.history.back();
+});
+$(".shutdown_icon").click(function(){
+	var c = confirm("退出游戏？");
+	if (c == true) {
+		sessionStorage.clear();
+		window.location.href="index.html";
+	} 
+	else {
+		return;
+	}
+});

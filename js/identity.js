@@ -108,3 +108,19 @@ function nextPlayer() {
 	identity.style.display = "none";
 	words.style.display = "none";
 }
+
+
+$(".arrow_icon").click(function(){
+	window.history.back();
+});
+
+$(".shutdown_icon").click(function(){
+	var c = confirm("退出游戏？");
+	if (c == true) {
+		sessionStorage.clear();
+		window.location.href="index.html";
+	} 
+	else {
+		return;
+	}
+});

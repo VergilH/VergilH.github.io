@@ -127,3 +127,7 @@ function shuffle(playerNumber) {
     sessionStorage.playerNumber = str;
     return str;
 };
+
+$(".arrow_icon").click(function(){
+	window.history.back();
+});
