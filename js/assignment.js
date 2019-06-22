@@ -11,20 +11,20 @@ sessionStorage.alive = survivor;
 
 function dstributionNumber() {
 	if (needNumber.value<7) {
-		killer.value=1;
-		person.value=needNumber.value-1;
-	}
-	else if (needNumber.value>6&&needNumber.value<11) {
 		killer.value=2;
 		person.value=needNumber.value-2;
 	}
-	else if (needNumber.value>10&&needNumber.value<15) {
+	else if (needNumber.value>6&&needNumber.value<11) {
 		killer.value=3;
 		person.value=needNumber.value-3;
 	}
-	else if (needNumber.value>14&&needNumber.value<19) {
+	else if (needNumber.value>10&&needNumber.value<15) {
 		killer.value=4;
 		person.value=needNumber.value-4;
+	}
+	else if (needNumber.value>14&&needNumber.value<19) {
+		killer.value=5;
+		person.value=needNumber.value-5;
 	}
 }
 //获取词汇
