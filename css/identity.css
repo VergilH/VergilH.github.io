@@ -1,2 +1,260 @@
-p{display:inline-block;margin:0}a{text-decoration:none;outline:none}a:hover{text-decoration:none;outline:none}a:focus{text-decoration:none;outline:none}button{padding:0;border:none;outline:none}.border-right{border-right:1px solid #e1e5e7}.border-left{border-left:1px solid #e1e5e7}.red-text{color:#f66f6f}.blue-text{color:#29bde0}.grey-text{color:#d9d9d9}.deepgrey-text{color:#9a9a9a}.white-text{color:#fff}.black-text{color:#787878}.deepblack-text{color:#464646}.orange-text{color:#fbb435}.yellow-text{color:#ffc865}.font-lg{font-size:18px}.font-nm{font-size:16px}.font-sm{font-size:14px}.left{float:left}.right{float:right}.clearfloat{clear:both}.setmiddle{margin:0 auto}.setcenter{position:relative;display:flex;align-items:center;justify-content:center}body{margin:0;background-color:#f0f0f0}header{width:100%;height:44.5px;text-align:center;background:#29bde0}body{background-color:#29bde0}header{position:relative;border-bottom:1px solid #74d4eb;line-height:44.5px;align-items:center;color:#fff}.arrow_icon,.shutdown_icon{position:absolute;top:50%}.arrow_icon{left:15px;margin-top:-13px;width:16px;height:26px;background:url(../images/assignment/assignment-arrow.png);background-size:100% 100%}.shutdown_icon{margin-top:-12px;right:15px;width:24px;height:24px;background:url(../images/shutdown.png);background-size:100% 100%}main{position:relative;width:100%;text-align:center}main .main-content{position:relative;margin:42px auto 60px;width:72%;height:330px;border:3px solid #fff;box-sizing:border-box;background-color:#ffedc5}main .number{position:absolute;left:50%;margin:-18px;width:36px;height:36px;border:2px solid #ffedc5;border-radius:18px;box-sizing:border-box;line-height:32px;text-align:center;background-color:#fff;font-size:20px;color:#f56b81}main #img-check{margin:90px auto 0;width:150px;height:150px;border:none;background:url(../images/assignment/check.png) no-repeat;background-size:100% 100%}main #img-wow{margin:30px auto 20px;width:120px;height:120px;border:none;background:url(../images/assignment/wow.png) no-repeat;background-size:100% 100%}main #identity,main #words{display:none;font-size:20px}main #identity{margin-bottom:5px;color:#29bde0}main #words{margin-bottom:10px;color:#f56b81}main #tip{width:100%;padding:10px 18px;border-top:1px solid #fff;box-sizing:border-box;text-align:left;color:#fca000;font-size:14px}main #img-wow,main #tip{display:none}#footer_btn,#footer_btn2,#footer_btn3{width:76%;height:36px;margin:0 12%;padding:0;border:none;color:#fff;background-color:#fab344}#footer_btn:focus,#footer_btn2:focus,#footer_btn3:focus{background-color:#fac399}#footer_btn2,#footer_btn3{display:none}
+p {
+	display: inline-block;
+	margin: 0
+}
+
+a {
+	text-decoration: none;
+	outline: none
+}
+
+a:hover {
+	text-decoration: none;
+	outline: none
+}
+
+a:focus {
+	text-decoration: none;
+	outline: none
+}
+
+button {
+	padding: 0;
+	border: none;
+	outline: none
+}
+
+.border-right {
+	border-right: 1px solid #e1e5e7
+}
+
+.border-left {
+	border-left: 1px solid #e1e5e7
+}
+
+.red-text {
+	color: #f66f6f
+}
+
+.blue-text {
+	color: #29bde0
+}
+
+.grey-text {
+	color: #d9d9d9
+}
+
+.deepgrey-text {
+	color: #9a9a9a
+}
+
+.white-text {
+	color: #fff
+}
+
+.black-text {
+	color: #787878
+}
+
+.deepblack-text {
+	color: #464646
+}
+
+.orange-text {
+	color: #fbb435
+}
+
+.yellow-text {
+	color: #ffc865
+}
+
+.font-lg {
+	font-size: 18px
+}
+
+.font-nm {
+	font-size: 16px
+}
+
+.font-sm {
+	font-size: 14px
+}
+
+.left {
+	float: left
+}
+
+.right {
+	float: right
+}
+
+.clearfloat {
+	clear: both
+}
+
+.setmiddle {
+	margin: 0 auto
+}
+
+.setcenter {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+body {
+	margin: 0;
+	background-color: #f0f0f0
+}
+
+header {
+	width: 100%;
+	height: 44.5px;
+	text-align: center;
+	background: #29bde0
+}
+
+body {
+	background-color: #29bde0
+}
+
+header {
+	position: relative;
+	border-bottom: 1px solid #74d4eb;
+	line-height: 44.5px;
+	align-items: center;
+	color: #fff
+}
+
+.arrow_icon,
+.shutdown_icon {
+	position: absolute;
+	top: 50%
+}
+
+.arrow_icon {
+	left: 15px;
+	margin-top: -13px;
+	width: 16px;
+	height: 26px;
+	background: url(../images/assignment/assignment-arrow.png);
+	background-size: 100% 100%
+}
+
+.shutdown_icon {
+	margin-top: -12px;
+	right: 15px;
+	width: 24px;
+	height: 24px;
+	background: url(../images/shutdown.png);
+	background-size: 100% 100%
+}
+
+main {
+	position: relative;
+	width: 100%;
+	text-align: center
+}
+
+main .main-content {
+	position: relative;
+	margin: 42px auto 60px;
+	width: 72%;
+	height: 330px;
+	border: 3px solid #fff;
+	border-radius: 6px;
+	box-sizing: border-box;
+	background-color: #ffedc5
+}
+
+main .number {
+	position: absolute;
+	left: 50%;
+	margin: -18px;
+	width: 36px;
+	height: 36px;
+	border: 2px solid #ffedc5;
+	border-radius: 18px;
+	box-sizing: border-box;
+	line-height: 32px;
+	text-align: center;
+	background-color: #fff;
+	font-size: 20px;
+	color: #f56b81
+}
+
+main #img-check {
+	margin: 90px auto 0;
+	width: 150px;
+	height: 150px;
+	border: none;
+	background: url(../images/assignment/check.png) no-repeat;
+	background-size: 100% 100%
+}
+
+main #img-wow {
+	margin: 30px auto 20px;
+	width: 120px;
+	height: 120px;
+	border: none;
+	background: url(../images/assignment/wow.png) no-repeat;
+	background-size: 100% 100%
+}
+
+main #identity,
+main #words {
+	display: none;
+	font-size: 20px
+}
+
+main #identity {
+	margin-bottom: 5px;
+	color: #29bde0
+}
+
+main #words {
+	margin-bottom: 10px;
+	color: #f56b81
+}
+
+main #tip {
+	width: 100%;
+	padding: 10px 18px;
+	border-top: 1px solid #fff;
+	box-sizing: border-box;
+	text-align: left;
+	color: #fca000;
+	font-size: 14px
+}
+
+main #img-wow,
+main #tip {
+	display: none
+}
+
+#footer_btn,
+#footer_btn2,
+#footer_btn3 {
+	width: 76%;
+	height: 46px;
+	margin: 0 12%;
+	padding: 0;
+	border: none;
+	border-radius: 6px;
+	color: #fff;
+	background-color: #fab344
+}
+
+#footer_btn:focus,
+#footer_btn2:focus,
+#footer_btn3:focus {
+	background-color: #fac399
+}
+
+#footer_btn2,
+#footer_btn3 {
+	display: none
+}
+
 /*# sourceMappingURL=identity.css.map */

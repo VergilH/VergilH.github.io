@@ -191,6 +191,7 @@ main {
     border-top: 2.5px solid #fff;
     border-right: 2.5px solid #fff;
     border-left: 2.5px solid #fff;
+	border-radius: 6px 6px 0 0;
     background: #f5c97b;
     box-sizing: border-box;
     color: #565656; }
@@ -199,6 +200,7 @@ main {
     border-right: 2.5px solid #fff;
     border-left: 2.5px solid #fff;
     border-bottom: 2.5px solid #fff;
+	border-radius: 0 0 6px 6px;
     box-sizing: border-box;
     background: #83b09a;
     color: #fff;
@@ -244,6 +246,7 @@ footer {
     margin: 0 12%;
     width: 76%;
     height: 45px;
+	border-radius: 6px;
     background: #fbb435; }
 
 /*# sourceMappingURL=vote.css.map */

@@ -144,6 +144,7 @@ header {
   position: relative;
   margin: 8px 2% 0;
   width: 96%;
+  border-radius: 6px;
   box-sizing: border-box;
   color: #787878;
   background-color: #fff;
@@ -172,6 +173,7 @@ header {
 .displayNumber {
   padding: 30px 0 20px;
   height: 195px;
+  border-radius: 6px;
   text-align: center;
   color: #a1a1a1; }
   .displayNumber div {
@@ -342,6 +344,7 @@ form input {
   margin: 8px 2%;
   padding: 0;
   border: none;
+  border-radius: 6px;
   color: #fff;
   background-color: #fab344; }
   .footer_btn:focus {
