@@ -4,24 +4,24 @@
 背景介绍
 
 
-TypeScript简称ts<br />
-TypeScript是ES6的实现,ts语言是按照ES6的标准设计的
-TypeScript是微软公司联合谷歌公司推出的一门基于javascript的一门新语言,目前主要应用于Angular2以上版本的的开发中
-#### 什么是TypeScript?<br>
-TypeScript是JavaScript的一个超集,对JavaScript中的变量加入的类型的支持和限制<br>
-TypeScript可以编译出纯净,简洁的Javascript代码,并且可以运行在任何浏览器上、Node.js环境中和任何支持ECMAScript 3（或更高版本）的JavaScript引擎中<br>
-TypeScript本身并不能直接运行在浏览器上,需要编译成JavaScript进行运行(可以认为TypeScritp只存在于开发阶段,生产阶段依然使用的是我们熟悉的JavaScript,使用TypeScript中的好处可以提高开发效率,解决javascript弱类型带来的一些问题)
-TypeScript的文件后缀名为.ts
+TypeScript简称ts  
+TypeScript是ES6的实现,ts语言是按照ES6的标准设计的  
+TypeScript是微软公司联合谷歌公司推出的一门基于javascript的一门新语言,目前主要应用于Angular2以上版本的的开发中  
+#### 什么是TypeScript?
+TypeScript是JavaScript的一个超集,对JavaScript中的变量加入的类型的支持和限制  
+TypeScript可以编译出纯净,简洁的Javascript代码,并且可以运行在任何浏览器上、Node.js环境中和任何支持ECMAScript 3（或更高版本）的JavaScript引擎中  
+TypeScript本身并不能直接运行在浏览器上,需要编译成JavaScript进行运行(可以认为TypeScritp只存在于开发阶段,生产阶段依然使用的是我们熟悉的JavaScript,使用TypeScript中的好处可以提高开发效率,解决javascript弱类型带来的一些问题)  
+TypeScript的文件后缀名为.ts  
 #### 运行环境
-TypeScript编译器基于nodejs环境,所以必须先安装nodejs环境<br>
-TypeScript编译器安装<br>
+TypeScript编译器基于nodejs环境,所以必须先安装nodejs环境  
+TypeScript编译器安装  
 ```
 npm install typescript -g
 ```
-因为TypeScript编译器为一个工具包,所以采用全局安装<br>
+因为TypeScript编译器为一个工具包,所以采用全局安装  
 
 #### TypeScript中数据类型介绍
-定义布尔类型<br>
+定义布尔类型  
 ```js
 //ts声明布尔类型的变量
 let flag:boolean=true;

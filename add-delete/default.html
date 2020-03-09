@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="
+		https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/css/layui.css" />
+	</head>
+	<body>
+		<header>
+			<div class="form-div">
+				<p class="ex-tip">姓名</p>
+				<input class="layui-input form-input" type="text" placeholder="name" id="namae">
+			</div>
+			<div class="form-div">
+				<p class="ex-tip">年龄</p>
+				<input class="layui-input form-input" type="text" placeholder="age" id="age">
+			</div>
+			<div class="form-div">
+				<p class="ex-tip">性别</p>
+				<select name="city" lay-verify="required" id="sex">
+					<option value="男">男</option>
+					<option value="女">女</option>
+				</select>
+			</div>
+			<div class="clear-float">
+				
+			</div>
+			<div class="form-div-btn">
+				<input class="layui-btn form-input" type="button" value="提交" id="comfirm-btn">
+			</div>
+		</header>
+		<table class="layui-table">
+			<thead>
+				<tr>
+					<th></th>
+					<th>id</th>
+					<th>姓名</th>
+					<th>年龄</th>
+					<th>性别</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- <tr><th><input type="checkbox" name=""></th><th>1</th><th>zMouse</th><th>18</th><th>男</th><th><a href="javascript:;">↑</a> <a href="javascript:;">↓</a> <a href="javascript:;">X</a></th></tr> -->
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="6"><input type="checkbox" class="checked"><a href="javascript:;">删除选中</a></td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+	<script src="js/default.js"></script>
+	<script src="
+	https://heerey525.github.io/layui-v2.4.3/layui-v2.4.5/layui.js"></script>
+</html>

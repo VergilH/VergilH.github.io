@@ -141,7 +141,7 @@ clearInterval(b.timer);
 #### 总结
 箭头函数写代码拥有更加简洁的语法;不会绑定this。
 
-作者：Fundebug
-链接：https://juejin.im/post/59327a58a0bb9f0058c8caae
-来源：掘金
+作者：Fundebug  
+链接：https://juejin.im/post/59327a58a0bb9f0058c8caae  
+来源：掘金  
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
